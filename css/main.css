@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/* CSS Document */
+/* setting page dimensions------------------------*/
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+/* heading elements--------------*/	
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 8px 8px;
+}
+/* p-elements---------------*/
+p {
+	margin: 0;
+	padding: 8px 8px;
+}
+/*  body font-------------------------------------*/
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+/* header-------------------------------------- */
+header {
+	background: teal;
+}
+/* header nav--------------------------------------*/ /* padding may need to be removed from the nav sections */
+header ul li {
+	background: silver;
+	display: inline;
+	margin: 25px;
+	padding: 10px;
+		
+}
+/* footer----------------------------------------*/
+footer {
+	background: teal;
+}
+/* footer nav-------------------------------------*/
+footer ul li {
+	background: silver;
+	display: inline;
+	margin: 25px;
+	padding: 10px;
+}
+/* gallery-----------------------------------------*/
+#gallery {
+	background: silver;
+	
+}
+/* aside owl facts---------------------------------*/
+aside {
+	background: teal;
+	float: right;
+	padding: 52px 30px 36px 30px;
+}
+/* ancient knowledge section ----------------------*/
+#ancientknowledge {
+	background: gray;
+}
+/* main content (Snowy Owls) -------------------------------*/
+#main_section {
+	background: silver;
+	margin-top:0 ;
+	margin-bottom: 0;
+	
+	
+}
+/* about us ---------------------------------------*/
+#aboutus {
+	background: gray;
+	
+}
+/* sign up section --------------------------------*/
+#signup {
+	background: silver;
+	
+}
+header h1 {
+	margin: 0;
+}
+/* aside ul -------------------------------------------*/
+aside ul {
+	list-style-type: square;
+}
+#ancient_article {
+	float: none;
+}
+#ancientknowledge img {
+	float: right;
+}
+	
