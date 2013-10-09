@@ -5,14 +5,17 @@
 	width: 960px;
 	margin: 0 auto;
 }
-/* removing margins from heading elements--------------*/	
+/* heading elements--------------*/	
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
+	padding: 8px 8px;
 }
-/* removing margins from p-elements---------------*/
+/* p-elements---------------*/
 p {
 	margin: 0;
+	padding: 8px 8px;
 }
+/*  body font-------------------------------------*/
 body {
 	font-family: 'Quicksand', sans-serif;
 }
@@ -30,7 +33,7 @@ header ul li {
 }
 /* footer----------------------------------------*/
 footer {
-	background: tan;
+	background: teal;
 }
 /* footer nav-------------------------------------*/
 footer ul li {
@@ -41,30 +44,30 @@ footer ul li {
 }
 /* gallery-----------------------------------------*/
 #gallery {
-	background: orange;
+	background: silver;
 	
 }
 /* aside owl facts---------------------------------*/
 aside {
-	background: yellow;
+	background: teal;
 	float: right;
-	padding: 23px 30px;
+	padding: 52px 30px 36px 30px;
 }
 /* ancient knowledge section ----------------------*/
 #ancientknowledge {
-	background: cyan;
-	
+	background: gray;
 }
-/* main content top -------------------------------*/
+/* main content (Snowy Owls) -------------------------------*/
 #main_section {
-	background: green;
+	background: silver;
 	margin-top:0 ;
 	margin-bottom: 0;
+	
 	
 }
 /* about us ---------------------------------------*/
 #aboutus {
-	background: pink;
+	background: gray;
 	
 }
 /* sign up section --------------------------------*/
@@ -75,5 +78,14 @@ aside {
 header h1 {
 	margin: 0;
 }
-	
+/* aside ul -------------------------------------------*/
+aside ul {
+	list-style-type: square;
+}
+#ancient_article {
+	float: none;
+}
+#ancientknowledge img {
+	float: right;
+}
 	
