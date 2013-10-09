@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* CSS Document */
+/* setting page dimensions------------------------*/
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+/* removing margins from heading elements--------------*/	
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+/* removing margins from p-elements---------------*/
+p {
+	margin: 0;
+}
+/* header-------------------------------------- */
+header {
+	background: silver;
+}
+/* header nav--------------------------------------*/ /* padding may need to be removed from the nav sections */
+header ul li {
+	background: orange;
+	display: inline;
+	margin: 25px;
+	padding: 10px;
+		
+}
+/* footer----------------------------------------*/
+footer {
+	background: tan;
+}
+/* footer nav-------------------------------------*/
+footer ul li {
+	background: orange;
+	display: inline;
+	margin: 25px;
+	padding: 10px;
+}
+/* gallery-----------------------------------------*/
+#gallery {
+	background: orange;
+	
+}
+/* aside owl facts---------------------------------*/
+aside {
+	background: yellow;
+	float: right;
+	padding: 30px 30px;
+}
+/* ancient knowledge section ----------------------*/
+#ancientknowledge {
+	background: cyan;
+	
+}
+/* main content top -------------------------------*/
+#main_section {
+	background: green;
+	margin-top:0 ;
+	margin-bottom: 0;
+	
+}
+/* about us ---------------------------------------*/
+#aboutus {
+	background: pink;
+	
+}
+/* sign up section --------------------------------*/
+#signup {
+	background: silver;
+	
+}
+header h1 {
+	margin-top: 0;
+}
+	
+	
