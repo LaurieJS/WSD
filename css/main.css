@@ -34,7 +34,7 @@ header ul {
 	width: 940px;
 	margin: 0 auto;
 	list-style-type: none;
-	padding: 0;
+	padding: 20px;
 	float: none;
 }
 /* header nav li---------------------------------------*/
@@ -42,7 +42,7 @@ header ul li {
 	width: 235px;
 	float: left;
 	text-decoration: none;
-	text-style: bold;
+	font: bold;
 	/*display: inline;
 	margin: 25px;
 	padding: 10px;*/
@@ -137,7 +137,7 @@ section ul li {
 }
 /* gallery ul--------------------------------------------*/
 section ul {
-	margin-bottom: 0:
+	margin-bottom: 0;
 }
 /* sign up button----------------------------------------*/
 .button {
@@ -154,7 +154,7 @@ section ul {
 }
 a {
 	text-decoration: none;
-	text-style: bold;
+	font: bold;
 }
 /* different color link states------------------*/
 a:link {
@@ -185,6 +185,7 @@ img {
 }
 header p {
 	padding-bottom: 5px;
+	font: bold;
 }
 
 
