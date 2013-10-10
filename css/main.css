@@ -77,6 +77,12 @@ aside h3 {
 	margin-top:0 ;
 	margin-bottom: 0;
 }
+/* Snowy Owl paragraphs made into columns-----------*/
+.column_text {
+    -moz-column-count:2; 
+    -webkit-column-count:2; 
+    column-count:2;
+}
 /* about us ---------------------------------------*/
 #aboutus {
 	background: #CCC;
