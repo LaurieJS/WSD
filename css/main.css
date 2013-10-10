@@ -62,7 +62,10 @@ footer ul li {
 aside {
 	background: rgba(153,255,255,0.75);
 	float: right;
-	padding: 52px 30px 36px 30px;
+	padding: 30px 30px 30px 30px;
+}
+aside h3 {
+	text-shadow: 1px 1px 2px #003;
 }
 /* ancient knowledge section ----------------------*/
 #ancientknowledge {
