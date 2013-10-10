@@ -5,6 +5,8 @@ body {
 	font-family: 'Quicksand' , sans-serif;
 	font-size: 16px;
 	line-height: 1.3;
+	margin: 0;
+	padding: 0;
 }
 /* div wrapper to set width----------------------*/
 #wrapper {
@@ -14,12 +16,12 @@ body {
 /* heading elements--------------*/	
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
-	padding: 8px 8px;
+	padding: 8px 10px;
 }
 /* p-elements---------------*/
 p {
 	margin: 0;
-	padding: 8px 8px;
+	padding: 8px 10px;
 }
 /* header--------------------------------------*/
 header {
@@ -57,6 +59,7 @@ footer ul {
 }
 /* footer nav-------------------------------------*/
 footer ul li {
+	width: 235px;
 	display: inline;
 	margin: 25px;
 	padding: 10px;
@@ -69,11 +72,15 @@ footer ul li {
 /* aside owl facts---------------------------------*/
 aside {
 	background: rgba(153,255,255,0.75);
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
 	float: right;
 	padding: 30px 30px 30px 30px;
 }
 /* owl facts header----------------------------------*/
 aside h3 {
+	text-align: center;
 	text-shadow: 1px 1px 2px #003;
 }
 /* ancient knowledge section ----------------------*/
@@ -88,9 +95,9 @@ aside h3 {
 }
 /* Snowy Owl paragraphs made into two columns because three columns didn't look good with the aside ----------*/
 .column_text {
-    -moz-column-count:2; 
-    -webkit-column-count:2; 
-    column-count:2;
+    -moz-column-count: 2; 
+    -webkit-column-count: 2; 
+    column-count: 2;
 }
 /* about us ---------------------------------------*/
 #aboutus {
@@ -172,4 +179,12 @@ footer ul {
 img {
 	margin-bottom: 0;
 }
+#home img {
+	float: left;
+	padding-top: 10px;
+}
+header p {
+	padding-bottom: 5px;
+}
+
 
