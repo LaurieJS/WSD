@@ -28,7 +28,7 @@ p {
 }
 /* header--------------------------------------*/
 header {
-	background: rgba(153,255,255,0.75);
+	background: rgba(153,255,255,1);
 	width: 960px;
 	clear: none;
 }
@@ -49,7 +49,7 @@ header ul li {
 }
 /* footer----------------------------------------*/
 footer {
-	background: rgba(153,255,255,0.75);
+	background: rgba(153,255,255,1);
 	margin-top: 0;
 }
 footer ul {
@@ -66,12 +66,12 @@ footer ul li {
 }
 /* gallery-----------------------------------------*/
 #gallery {
-	background: rgba(204,204,204,0.50);
+	background: rgba(255,255,229,0.75);
 	margin-bottom: 0;
 }
 /* aside owl facts---------------------------------*/
 aside {
-	background: rgba(153,255,255,0.75);
+	background: rgba(153,255,255,1);
 	border-top: 1px solid #999;
 	border-bottom: 1px solid #999;
 	border-left: 1px solid #999;
@@ -85,11 +85,11 @@ aside h3 {
 }
 /* ancient knowledge section ----------------------*/
 #ancientknowledge {
-	background: #CCC;
+	background: #FFFFE5;
 }
 /* main content (Snowy Owls) -------------------------------*/
 #main_section {
-	background: #CCC;
+	background: #FFFFE5;
 	margin-top:0 ;
 	margin-bottom: 0;
 }
@@ -101,7 +101,7 @@ aside h3 {
 }
 /* about us ---------------------------------------*/
 #aboutus {
-	background: #CCC;
+	background: #FFFFE5;
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -111,7 +111,7 @@ aside h3 {
 }
 /* sign up section --------------------------------*/
 #signup {
-	background: #CCC;
+	background: #FFFFE5;
 }
 /* Knowledge.com indented off of the page-------------*/
 header h1 {
