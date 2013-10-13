@@ -143,11 +143,15 @@ h1 {
 	clear: right;
 	padding-bottom: 20px;
 }
+#main_section img {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
 aside {
 	background: #D1FFCC;
-	border-top: 1px solid #333;
-	border-bottom: 1px solid #333;
-	border-left: 1px solid #333;
+	border-top: 1px groove #333;
+	border-bottom: 1px groove #333;
+	border-left: 1px groove #333;
 	float: right;
 	padding: 30px 40px;
 	margin-top: 0;
@@ -155,7 +159,7 @@ aside {
 aside ul {
 	font-style: italic;
 	list-style-type: square;
-	line-height: 1.4;
+	line-height: 1.5;
 }
 aside h3 {
 	padding-bottom: 10px;
@@ -245,6 +249,7 @@ footer a {
 	font-weight: bold;
 }
 footer p {
+	font-size: 12px;
 	padding-bottom: 5px;
 	clear: left;
 }
