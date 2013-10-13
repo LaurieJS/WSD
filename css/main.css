@@ -155,6 +155,8 @@ aside {
 	float: right;
 	padding: 30px 40px;
 	margin-top: 0;
+	position: relative;
+	top: -5px;
 }
 aside ul {
 	font-style: italic;
