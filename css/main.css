@@ -55,7 +55,7 @@ table {
 ************************************************************************************/
 /*****************************************Site wide settings************************/
 #wrapper {
-    max-width: 960px; /*was width:960px*/
+    max-width: 960px; /*working on now!!!was width:960px*/
     margin: 0 auto;
 }
 body {
@@ -84,11 +84,12 @@ h3 {
 	font-weight: bold;
 }
 p {
-	font-size: 1em; /*16px (16/16)*/
+	font-size: 1.0625em; /*16px (16/16)-trying 17px (17/16)*/
     margin: 0;
     padding: 0 15px;
 }
 img {
+	max-width: 100%; /*working on now-and width of wrapper*/
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -143,12 +144,14 @@ h1 {
 	background: #FFFACD;
 	clear: right;
 	padding-bottom: 20px;
+	/*width: 100%;*/ /*960px, just created-still trying to figure out the aside and snowy owls*/
 }
 #main_section img {
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
 aside {
+	width: 20%; /* I just like the look of it!just created to set width of aside, 270px (270/960)*/
 	background: #D1FFCC;
 	/*border-top: 1px groove #333;
 	border-bottom: 1px groove #333;
@@ -160,6 +163,7 @@ aside {
 	top: -5px;
 }
 aside ul {
+	font-size: 1.0625em; /*17px (17/16) or is it (17/20 because of the h3?) this was not here-created to add font size*/
 	font-style: italic;
 	list-style-type: square;
 	line-height: 1.5;
@@ -170,6 +174,9 @@ aside h3 {
 	text-shadow: 1px 1px 2px #003;
 }
 .column_text {
+	 width: 70%;
+	 float: none; /*just created the top two trying to figure out the responsive issues*/
+	 /*width: 71.875%;*/ /*created along with the aside width, 690px (690/960)*/
     -moz-column-count: 2; 
     -webkit-column-count: 2; 
     column-count: 2;
@@ -220,7 +227,7 @@ aside h3 {
 	padding-bottom: 10px;
 }
 blockquote {
-	width: 800px;
+	width: 83.333333%; /*800px (800/960)*/
 	text-indent: 20px;
 	margin-bottom: 0;
 	padding-right: 40px;
@@ -240,7 +247,7 @@ footer {
 	background: #D1FFCC;
 }
 footer ul {
-	width: 940px;
+	width: 97.91666%; /*940px; (940/960)*/
 	padding: 5px;
 }
 footer a {
@@ -252,7 +259,7 @@ footer a {
 	font-weight: bold;
 }
 footer p {
-	font-size: 12px;
+	font-size: 0.75em; /*12px (12/16)*/
 	padding-bottom: 5px;
 	clear: left;
 }
@@ -273,7 +280,7 @@ a:active {
 /**********************************************Buttons and Misc.*******************/
 .button {
 	font-family: 'Quicksand', sans-serif;
-	font-size: 24px;
+	font-size: 1.5em; /*24px (24/16)*/
 	font-weight: bold;
 	background-color: #FF5600;
 	border: none;
