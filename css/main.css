@@ -293,8 +293,27 @@ a:active {
 	background: -moz-linear-gradient(top, #f3c5bd 0%, #ea2803 9%, #ea2803 34%, #ff6600 75%, #e86c57 94%, #c72200 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3c5bd), color-stop(9%,#ea2803), color-stop(34%,#ea2803),     color-stop(75%,#ff6600), color-stop(94%,#e86c57), color-stop(100%,#c72200)); /* Thanks to Colorzilla.com for helping with the gradient*/
 }
-/***************************************************End of buttons and Misc.**********
+/***************************************************End of buttons and Misc.*********
 ************************************************************************************/
+/***********************************************Media Queries***********************/
+/*Tablet Portrait size to standard 960 (devices and browsers)*/
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	#home {
+		background: lightCyan;
+	}
+}
+/*Mobile Landscape size to Tablet Portrait (devices and browsers)*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#home {
+		background: mistyRose;
+	}
+}
+/*Mobile Portrait size to Mobile Landscape size (devices and browsers)*/
+@media only screen and (max-width: 479px) {
+	#home {
+		background: lavender;
+	}
+}
 
 
 
