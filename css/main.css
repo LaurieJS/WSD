@@ -55,7 +55,7 @@ table {
 ************************************************************************************/
 /*****************************************Site wide settings************************/
 #wrapper {
-    width: 960px;
+    max-width: 960px; /*was width:960px*/
     margin: 0 auto;
 }
 body {
@@ -64,7 +64,7 @@ body {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	font-family: 'Quicksand', sans-serif;
-	font-size: 16px;
+	font-size: 100%; /*default 16px*/
 	line-height: 1.4;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -75,15 +75,16 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 10px;
 }
 h2 {
-	font-size: 24px;
+	font-size: 1.5em; /*24px (24/16)*/
 	font-weight: bold;
 	padding: 20px 10px 20px 10px;
 }
 h3 {
-	font-size: 20px;
+	font-size: 1.25em; /*20px (20/16)*/
 	font-weight: bold;
 }
 p {
+	font-size: 1em; /*16px (16/16)*/
     margin: 0;
     padding: 0 15px;
 }
@@ -102,7 +103,7 @@ ul {
     background: #D1FFCC;
 }
 h1 {
-	text-indent: -1000px;
+	text-indent: -104.16666%; /*-1000px; (-1000/960)*/
 }
 #home p {
 	font-style: italic;
@@ -110,13 +111,13 @@ h1 {
 	margin-top: -20px;
 }
 #home ul {
-	width: 940px;
+	width: 97.91666%; /*940px (940/960)*/
 	margin: 0 auto;
 	list-style-type: none;
 	padding:22px;
 }
 #home ul li a {
-	width: 235px;
+	width: 24.47916%; /*235px (235/960) might need to change to 940*/
 	float: left;
 	text-decoration: none;
 	text-align: center;
@@ -149,9 +150,9 @@ h1 {
 }
 aside {
 	background: #D1FFCC;
-	border-top: 1px groove #333;
+	/*border-top: 1px groove #333;
 	border-bottom: 1px groove #333;
-	border-left: 1px groove #333;
+	border-left: 1px groove #333;******I don't really like the border*******/
 	float: right;
 	padding: 30px 40px;
 	margin-top: 0;
