@@ -180,6 +180,9 @@ aside h3 {
     -moz-column-count: 2; 
     -webkit-column-count: 2; 
     column-count: 2;
+	column-width: 295px; /*just added to try to fix smaller screen size, still need to change to percentage*/
+    -moz-column-width: 295px; 
+    -webkit-column-width: 295px; 
 }
 .column_text p {
 	padding-bottom: 10px;
@@ -192,11 +195,13 @@ aside h3 {
 }
 #ancientknowledge img {
 	float: right;
+	max-width: 100% /*just added, I also removed the width and height from the HTML, not sure if this is correct*/
 }
 #ancient_article {
+	width: 60%; /*just added, and commented out padding-right: 310px for this test*/
 	float: none;
 	padding-bottom: 80px;
-	padding-right: 310px;
+	/*padding-right: 310px;*/
 }
 #ancient_article h3 {
 	padding: 5px 10px;
@@ -327,6 +332,12 @@ a:active {
 	}
 	#main_section aside {
 		display: none;
+	}
+	#ancientknowledge img {
+		float:none;
+	}
+	.column_text {
+		column-count: none;
 	}
 		
 		
