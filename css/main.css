@@ -160,7 +160,7 @@ aside {
 	padding: 30px 40px;
 	margin-top: 0;
 	position: relative;
-	top: -5px;
+	top: -416px;
 }
 aside ul {
 	font-size: 1.0625em; /*17px (17/16) or is it (17/20 because of the h3?) this was not here-created to add font size*/
@@ -191,16 +191,25 @@ aside h3 {
 ***********************************************************************************/
 /*******************************************Ancient Knowledge section**************/
 #ancientknowledge {
+	width: 100%;
 	background: rgba(255, 250, 205, 0.90);
 }
 #ancientknowledge img {
 	float: right;
-	max-width: 100% /*just added, I also removed the width and height from the HTML, not sure if this is correct*/
+	width: 27%;
+	position: relative;
+	top: -10px;
+	left: 28.4%; 
+	/*just added, I also removed the width and height from the HTML, not sure if this is correct*/
+	/*position: fixed;
+	top: 500px;
+	left: 20%;*/
+	
 }
 #ancient_article {
-	width: 60%; /*just added, and commented out padding-right: 310px for this test*/
+	width: 70%; /*just added, and commented out padding-right: 310px for this test*/
 	float: none;
-	padding-bottom: 80px;
+	padding-bottom: 30px;
 	/*padding-right: 310px;*/
 }
 #ancient_article h3 {
@@ -216,6 +225,7 @@ aside h3 {
 	background: #FFFACD;
 	clear: left;
 	clear: right;
+	float: none;
 }
 #gallery ul li {
 	display: inline-block;
@@ -320,6 +330,14 @@ a:active {
 	#home ul {
 		padding-bottom: 50px;
 	}
+	#main_section aside {
+		display: none;
+	}
+	#ancientknowledge img {
+		float: none;
+		width: 40%;
+		margin-left: -25%;
+	}
 }
 /*SMALL-Mobile Portrait size to Mobile Landscape size (devices and browsers)*/
 @media only screen and (max-width: 479px) {
@@ -335,8 +353,8 @@ a:active {
 	}
 	#ancientknowledge img {
 		float:none;
-		padding: 0 10%;
-		width: 80%
+		margin-left: -15%;
+		width: 70%
 	}
 	.column_text {
 		column-count: 1;
@@ -357,7 +375,8 @@ a:active {
 		display:none;
 	}
 	footer ul {
-		width: 100%
+		width: 100%;
+		list-style-type: none;
 	}
 	footer ul li a {
 		margin: 0 3%;
