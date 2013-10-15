@@ -248,11 +248,14 @@ footer {
 }
 footer ul {
 	width: 97.91666%; /*940px; (940/960)*/
-	padding: 5px;
+	padding: 5px 0.53191%; /*5px left and right (5/940)*/
 }
 footer a {
+	width: 19.14893%; /*180px (180/940)*/
 	float: left;
-	margin: 5px 50px 10px 50px;
+	padding-bottom: 5px;
+	/*margin-right: 0;
+	margin-left: 0;*/ /*margin: 5px 50px 10px 50px;*/
 	text-decoration: none;
 	text-align: center;
 	color: #FF5600;
@@ -309,12 +312,18 @@ a:active {
 		background: mistyRose;
 		background-image: none;
 	}
+	#home ul {
+		padding-bottom: 50px;
+	}
 }
 /*SMALL-Mobile Portrait size to Mobile Landscape size (devices and browsers)*/
 @media only screen and (max-width: 479px) {
 	#home {
 		background: lavender;
 		background-image: none;
+	}
+	#home ul {
+		padding-bottom: 50px;
 	}
 	#main_section aside {
 		display: none;
