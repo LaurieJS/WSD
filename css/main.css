@@ -335,19 +335,37 @@ a:active {
 	}
 	#ancientknowledge img {
 		float:none;
-		padding: 0 15%;
+		padding: 0 10%;
+		width: 80%
 	}
 	.column_text {
-		column-count: none;
-		width: 90%;
+		column-count: 1;
+		width: 95%;
+	}
+	#ancient_article h3 {
+		font-size: 1.1em;
+		width: 100%
 	}
 	#ancient_article {
-		width: 90%;
+		width: 95%;
 		float: none;
 	}
-		
-		
+	#gallery img {
+		padding: 0 7%;
+	}
+	#signup_link {
+		display:none;
+	}
+	footer ul {
+		width: 100%
+	}
+	footer ul li a {
+		margin: 0 3%;
+	}
+	
 }
+		
+		
 
 
 
