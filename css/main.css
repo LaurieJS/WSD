@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 /*****************************************Color Palette*****************************
-Light green (header,footer and aside) #D1FFCC (209, 255, 204)
+Light cyan (header,footer and aside) #E0FFFF (209, 255, 204)
 Orange (links and button) #FF5600  (255, 86, 0)
 Light yellow (section backgrounds): #FFFACD  (255, 250, 205)
 Dark gray (body text): #333  (51, 51, 51)
@@ -101,7 +101,7 @@ ul {
 ************************************************************************************/
 /****************************************Header settings****************************/
 #home {
-    background: #D1FFCC;
+    background: #E0FFFF;
 }
 h1 {
 	text-indent: -104.16666%; /*-1000px; (-1000/960)*/
@@ -152,7 +152,7 @@ h1 {
 }
 aside {
 	width: 20%; /* I just like the look of it!just created to set width of aside, 270px (270/960)*/
-	background: #D1FFCC;
+	background: #E0FFFF;
 	/*border-top: 1px groove #333;
 	border-bottom: 1px groove #333;
 	border-left: 1px groove #333;******I don't really like the border*******/
@@ -244,7 +244,7 @@ blockquote {
 **********************************************************************************/
 /*******************************************Footer settings***********************/
 footer {
-	background: #D1FFCC;
+	background: #E0FFFF;
 }
 footer ul {
 	width: 97.91666%; /*940px; (940/960)*/
@@ -296,23 +296,31 @@ a:active {
 /***************************************************End of buttons and Misc.*********
 ************************************************************************************/
 /***********************************************Media Queries***********************/
-/*Tablet Portrait size to standard 960 (devices and browsers)*/
+/*LARGE-Tablet Portrait size to standard 960 (devices and browsers)*/
 @media screen and (min-width: 768px) and (max-width: 959px) {
 	#home {
-		background: lightCyan;
+		background: honeyDew;
+		background-image: none;
 	}
 }
-/*Mobile Landscape size to Tablet Portrait (devices and browsers)*/
+/*MEDIUM-Mobile Landscape size to Tablet Portrait (devices and browsers)*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	#home {
 		background: mistyRose;
+		background-image: none;
 	}
 }
-/*Mobile Portrait size to Mobile Landscape size (devices and browsers)*/
+/*SMALL-Mobile Portrait size to Mobile Landscape size (devices and browsers)*/
 @media only screen and (max-width: 479px) {
 	#home {
 		background: lavender;
+		background-image: none;
 	}
+	#main_section aside {
+		display: none;
+	}
+		
+		
 }
 
 
