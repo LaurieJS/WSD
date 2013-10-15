@@ -335,9 +335,15 @@ a:active {
 	}
 	#ancientknowledge img {
 		float:none;
+		padding: 0 15%;
 	}
 	.column_text {
 		column-count: none;
+		width: 90%;
+	}
+	#ancient_article {
+		width: 90%;
+		float: none;
 	}
 		
 		
