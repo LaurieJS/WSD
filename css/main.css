@@ -196,7 +196,7 @@ aside h3 {
 }
 #ancientknowledge img {
 	float: right;
-	width: 27%;
+	width: 33%;
 	position: relative;
 	top: -10px;
 	left: 28.4%; 
@@ -207,7 +207,7 @@ aside h3 {
 	
 }
 #ancient_article {
-	width: 70%; /*just added, and commented out padding-right: 310px for this test*/
+	width: 60%; /*just added, and commented out padding-right: 310px for this test*/
 	float: none;
 	padding-bottom: 30px;
 	/*padding-right: 310px;*/
@@ -217,14 +217,14 @@ aside h3 {
 }
 #ancient_article p {
 	padding-bottom: 10px;
+	width: 85%;
 }
 /***************************************************End of Ancient Knowledge*******
 ***********************************************************************************/
 /*******************************************Gallery section************************/
 #gallery {
 	background: #FFFACD;
-	clear: left;
-	clear: right;
+	clear: both;
 	float: none;
 }
 #gallery ul li {
