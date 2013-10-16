@@ -59,6 +59,7 @@ table {
     margin: 0 auto;
 }
 body {
+	max-width: 100%;
     background: #FFC;
 	background-image: url(../images/wood.jpg);
 	background-size: 100% 100%;
@@ -196,9 +197,9 @@ aside h3 {
 }
 #ancientknowledge img {
 	float: right;
-	width: 33%;
+	width: 28%;
 	position: relative;
-	top: 40px;
+	top: 38px;
 	left: 22.9%; 
 	/*just added, I also removed the width and height from the HTML, not sure if this is correct*/
 	/*position: fixed;
@@ -213,11 +214,14 @@ aside h3 {
 	/*padding-right: 310px;*/
 }
 #ancient_article h3 {
-	padding: 5px 10px;
+	width: 100%;
+	padding: 5px 1.6%;
 }
 #ancient_article p {
+	float: none;
+	padding-right: 0;
 	padding-bottom: 10px;
-	width: 50%;
+	width: 55%;
 }
 /***************************************************End of Ancient Knowledge*******
 ***********************************************************************************/
@@ -391,7 +395,3 @@ a:active {
 }
 		
 		
-
-
-
-
