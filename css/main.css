@@ -198,8 +198,8 @@ aside h3 {
 	float: right;
 	width: 33%;
 	position: relative;
-	top: -10px;
-	left: 28.4%; 
+	top: 40px;
+	left: 22.9%; 
 	/*just added, I also removed the width and height from the HTML, not sure if this is correct*/
 	/*position: fixed;
 	top: 500px;
@@ -207,7 +207,7 @@ aside h3 {
 	
 }
 #ancient_article {
-	width: 60%; /*just added, and commented out padding-right: 310px for this test*/
+    /*just added, and commented out padding-right: 310px for this test*/
 	float: none;
 	padding-bottom: 30px;
 	/*padding-right: 310px;*/
@@ -217,7 +217,7 @@ aside h3 {
 }
 #ancient_article p {
 	padding-bottom: 10px;
-	width: 85%;
+	width: 50%;
 }
 /***************************************************End of Ancient Knowledge*******
 ***********************************************************************************/
@@ -334,9 +334,14 @@ a:active {
 		display: none;
 	}
 	#ancientknowledge img {
-		float: none;
-		width: 40%;
-		margin-left: -25%;
+		width: 36%;
+		margin-right: 24%;
+	}
+	#ancient_article {
+		width: 95%;
+	}
+	#ancient_article h3 {
+		width: 100%;
 	}
 }
 /*SMALL-Mobile Portrait size to Mobile Landscape size (devices and browsers)*/
@@ -352,9 +357,9 @@ a:active {
 		display: none;
 	}
 	#ancientknowledge img {
-		float:none;
+		float: none;
 		margin-left: -15%;
-		width: 70%
+		width: 50%;
 	}
 	.column_text {
 		column-count: 1;
@@ -365,7 +370,8 @@ a:active {
 		width: 100%
 	}
 	#ancient_article {
-		width: 95%;
+		width: 100%;
+		padding-top: 50px;
 		float: none;
 	}
 	#gallery img {
