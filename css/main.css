@@ -83,11 +83,12 @@ h2 {
 h3 {
 	font-size: 1.25em; /*20px (20/16)*/
 	font-weight: bold;
+	padding-bottom: 20px;
 }
 p {
 	font-size: 1.0625em; /*16px (16/16)-trying 17px (17/16)*/
     margin: 0;
-    padding: 0 15px;
+    padding: 0 2%; /*15px (15/960)*/
 }
 img {
 	max-width: 100%; /*working on now-and width of wrapper*/
@@ -152,13 +153,10 @@ h1 {
 	padding-bottom: 0;
 }
 aside {
-	width: 20%; /* I just like the look of it!just created to set width of aside, 270px (270/960)*/
+	width: 20%; 
 	background: #E0FFFF;
-	/*border-top: 1px groove #333;
-	border-bottom: 1px groove #333;
-	border-left: 1px groove #333;******I don't really like the border*******/
 	float: right;
-	padding: 30px 40px;
+	padding: 30px 3.5%; /*40px;*/
 	margin-top: 0;
 	position: relative;
 	top: -416px;
@@ -168,6 +166,7 @@ aside ul {
 	font-style: italic;
 	list-style-type: square;
 	line-height: 1.5;
+	padding-left: 16.2%;
 }
 aside h3 {
 	padding-bottom: 10px;
@@ -181,12 +180,13 @@ aside h3 {
     -moz-column-count: 2; 
     -webkit-column-count: 2; 
     column-count: 2;
-	column-width: 295px; /*just added to try to fix smaller screen size, still need to change to percentage*/
-    -moz-column-width: 295px; 
-    -webkit-column-width: 295px; 
+	column-width: 50%; /*295px*/ /*just added to try to fix smaller screen size, still need to change to percentage*/
+    -moz-column-width: 50%; /*295px*/ 
+    -webkit-column-width:50%; /*295px*/ 
 }
 .column_text p {
 	padding-bottom: 10px;
+	padding-left: 6%;
 }
 /*************************************************End of Main content settings*****
 ***********************************************************************************/
@@ -208,10 +208,8 @@ aside h3 {
 	
 }
 #ancient_article {
-    /*just added, and commented out padding-right: 310px for this test*/
 	float: none;
 	padding-bottom: 30px;
-	/*padding-right: 310px;*/
 }
 #ancient_article h3 {
 	width: 100%;
@@ -233,7 +231,7 @@ aside h3 {
 }
 #gallery ul li {
 	display: inline-block;
-	padding-left: 50px;
+	padding-left: 5.208333%; /*50px (50/960)*/
 	padding-bottom: 40px;
 }
 /***************************************************End of Gallery section********
@@ -247,11 +245,11 @@ aside h3 {
 }
 blockquote {
 	width: 83.333333%; /*800px (800/960)*/
-	text-indent: 20px;
+	text-indent: 2.5%; /*20px (20/800)*/
 	margin-bottom: 0;
-	padding-right: 40px;
+	padding-right: 5%; /*40px (40/800)*/
 	padding-bottom: 20px;
-	padding-left: 40px;
+	padding-left: 5%; /*40px (40/800)*/
 }
 /***************************************************End of About Us section*******
 **********************************************************************************/
@@ -273,8 +271,6 @@ footer a {
 	width: 19.14893%; /*180px (180/940)*/
 	float: left;
 	padding-bottom: 5px;
-	/*margin-right: 0;
-	margin-left: 0;*/ /*margin: 5px 50px 10px 50px;*/
 	text-decoration: none;
 	text-align: center;
 	color: #FF5600;
@@ -310,7 +306,7 @@ a:active {
 	box-shadow: 2px 2px 2px #333;
 	margin: 30px 0 10px 26px;
 	text-shadow: 1px 1px 3px #FFF;
-	width: 150px;
+	width: 15.625%; /*150px (150/960)*/
 	height: 40px;
 	background: -moz-linear-gradient(top, #f3c5bd 0%, #ea2803 9%, #ea2803 34%, #ff6600 75%, #e86c57 94%, #c72200 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3c5bd), color-stop(9%,#ea2803), color-stop(34%,#ea2803),     color-stop(75%,#ff6600), color-stop(94%,#e86c57), color-stop(100%,#c72200)); /* Thanks to Colorzilla.com for helping with the gradient*/
@@ -320,13 +316,42 @@ a:active {
 /***********************************************Media Queries***********************/
 /*LARGE-Tablet Portrait size to standard 960 (devices and browsers)*/
 @media screen and (min-width: 768px) and (max-width: 959px) {
+	body {
+		font-size: 1em;
+	}
+	h2 {
+		font-size: 1.4em;
+	}
+	h3 {
+		font-size: 1.1em;
+	}
+	
 	#home {
 		background: honeyDew;
 		background-image: none;
+	
+	}
+	#ancientknowledge img {
+		width: 27%;
+	}
+	#ancient_article {
+		min-width: 90%;
+	}
+	#gallery img {
+		padding-left: 25%;
 	}
 }
 /*MEDIUM-Mobile Landscape size to Tablet Portrait (devices and browsers)*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+	body {
+		font-size: 1em;
+	}
+	h2 {
+		font-size: 1.4em;
+	}
+	h3 {
+		font-size: 1.1em;
+	}
 	#home {
 		background: mistyRose;
 		background-image: none;
@@ -337,19 +362,55 @@ a:active {
 	#main_section aside {
 		display: none;
 	}
-	#ancientknowledge img {
-		width: 36%;
-		margin-right: 24%;
+	.column_text {
+		width: auto;
+		padding-right: 4%;
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
 	}
-	#ancient_article {
-		width: 95%;
+	#ancientknowledge img {
+		float:none;
+		width: 38%;
+		position: relative;
+		top: 1px;
+		left: 4%;
+	}
+	#ancient_article p {
+		width: auto;
+		padding-right: 5%;
+		padding-left: 5%;
+	
 	}
 	#ancient_article h3 {
 		width: 100%;
+		padding-left: 5%;
 	}
+	#gallery img {
+		padding-left: 12%;
+	}
+	#aboutus {
+		padding-right: 3%;
+		padding-left: 3%
+	}
+	#signup {
+		padding-right: 3%;
+		padding-left: 3%;
+	}
+		
+	
 }
 /*SMALL-Mobile Portrait size to Mobile Landscape size (devices and browsers)*/
 @media only screen and (max-width: 479px) {
+	body {
+		font-size: 0.9em;
+	}
+	h2 {
+		font-size: 1.3em;
+	}
+	h3 {
+		font-size: 1em;
+	}
 	#home {
 		background: lavender;
 		background-image: none;
@@ -365,21 +426,41 @@ a:active {
 		margin-left: -15%;
 		width: 50%;
 	}
+	#ancientknowledge h2{
+		margin-bottom: -40px;
+	}
 	.column_text {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
 		column-count: 1;
 		width: 95%;
 	}
 	#ancient_article h3 {
 		font-size: 1.1em;
-		width: 100%
+		width: 100%;
+		padding-left: 5%;
 	}
 	#ancient_article {
-		width: 100%;
+		width: auto;
 		padding-top: 50px;
 		float: none;
 	}
+	#ancient_article p {
+		width: auto; 
+	    padding-top: 15px;
+		padding-right: 5%;
+		padding-left: 5%;
+	}
 	#gallery img {
-		padding: 0 7%;
+		padding: 0 15%;
+	}
+	#aboutus p {
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+	#signup p {
+		padding-right: 5%;
+		padding-left: 5%;
 	}
 	#signup_link {
 		display:none;
