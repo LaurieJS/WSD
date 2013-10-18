@@ -55,7 +55,7 @@ table {
 ************************************************************************************/
 /*****************************************Site wide settings************************/
 #wrapper {
-    max-width: 960px; /*working on now!!!was width:960px*/
+    max-width: 960px; /*was width:960px*/
     margin: 0 auto;
 }
 body {
@@ -92,7 +92,7 @@ p {
     padding: 0 2%; /*15px (15/960)*/
 }
 img {
-	max-width: 100%; /*working on now-and width of wrapper*/
+	max-width: 100%;
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -121,7 +121,7 @@ h1 {
 	padding:22px 2.34042%; /*was (22px,22px,22px,22px)*/
 }
 #home ul li a {
-	width: 24.47916%; /*235px (235/960) might need to change to 940*/
+	width: 24.47916%; /*235px (235/960)*/
 	float: left;
 	text-decoration: none;
 	text-align: center;
@@ -162,7 +162,7 @@ aside {
 	top: -416px;
 }
 aside ul {
-	font-size: 1.0625em; /*17px (17/16) or is it (17/20 because of the h3?)*/
+	font-size: 1.0625em; /*17px (17/16)*/
 	font-style: italic;
 	list-style-type: square;
 	line-height: 1.5;
@@ -175,8 +175,7 @@ aside h3 {
 }
 .column_text {
 	 width: 70%;
-	 float: none; /*just created the top two trying to figure out the responsive issues*/
-	 /*width: 71.875%;*/ /*created along with the aside width, 690px (690/960)*/
+	 float: none; 
     -moz-column-count: 2; 
     -webkit-column-count: 2; 
     column-count: 2;
@@ -201,7 +200,6 @@ aside h3 {
 	position: relative;
 	top: 38px;
 	left: 22.9%; 
-	/*just added, I also removed the width and height from the HTML, not sure if this is correct*/
 	/*position: fixed;
 	top: 500px;
 	left: 20%;*/
@@ -300,9 +298,10 @@ a:active {
 ***********************************************************************************/
 /**********************************************Buttons and Misc.*******************/
 .button {
-	font-family: 'Quicksand', sans-serif;
+	font: normal normal normal 1.5em normal Quicksand, sans-serif;
+	/*font-family: Quicksand, sans-serif;
 	font-size: 1.5em; /*24px (24/16)*/
-	font-weight: bold;
+	/*font-weight: bold;*/
 	background-color: #FF5600;
 	border: none;
 	border-radius: 4px;
