@@ -64,7 +64,7 @@ body {
 	background-image: url(../images/background_texture.jpg); /*url(../images/wood.jpg);*/
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	font: 100%/1.4 Quicksand, sans-serif;
+	font: 1em/1.4 Quicksand, sans-serif;
 	/*font-family: 'Quicksand', sans-serif;
 	font-size: 100%; */ /*default 16px*/
 	/*line-height: 1.4; changed to font shorthand*/
@@ -74,12 +74,12 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    padding: 0 10px;
+    padding: 0 2%;
 }
 h2 {
 	font-size: 1.5em; /*24px (24/16)*/
 	font-weight: bold;
-	padding: 20px 10px 20px 10px;
+	padding: 20px 2%;
 }
 h3 {
 	font-size: 1.25em; /*20px (20/16)*/
