@@ -309,7 +309,7 @@ a:active {
 	box-shadow: 2px 2px 2px #333;
 	margin: 30px 0 10px 26px;
 	text-shadow: 1px 1px 3px #FFF;
-	width: 150px; 
+	width:  150px;
 	height: 40px;
 	background: -moz-linear-gradient(top, #f3c5bd 0%, #ea2803 9%, #ea2803 34%, #ff6600 75%, #e86c57 94%, #c72200 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3c5bd), color-stop(9%,#ea2803), color-stop(34%,#ea2803),     color-stop(75%,#ff6600), color-stop(94%,#e86c57), color-stop(100%,#c72200)); /* Thanks to Colorzilla.com for helping with the gradient*/
@@ -332,7 +332,7 @@ a:active {
 	}
 	
 	#home {
-		background: honeyDew;
+		/*background: honeyDew;*/
 		background-image: none;
 	}
 	.column_text p {
@@ -368,7 +368,7 @@ a:active {
 		font-size: 1.1em;
 	}
 	#home {
-		background: mistyRose;
+		/*background: mistyRose;*/
 		background-image: none;
 	}
 	#main_section h2 {
@@ -437,8 +437,11 @@ a:active {
 		font-size: 1em;
 	}
 	#home {
-		background: lavender;
+		/*background: lavender;*/
 		background-image: none;
+	}
+	#home p {
+		padding-left: 3%;
 	}
 	#home ul {
 		padding-bottom: 50px;
@@ -448,7 +451,7 @@ a:active {
 	}
 	#ancientknowledge img {
 		float: none;
-		margin-left: -15%;
+		margin-left: -18%;
 		width: 50%;
 	}
 	#ancientknowledge h2{
@@ -495,7 +498,7 @@ a:active {
 		list-style-type: none;
 	}
 	footer ul li a {
-		margin: 0 3%;
+		margin: 0 2%;
 	}
 }
 		
