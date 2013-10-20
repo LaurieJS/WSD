@@ -192,20 +192,23 @@ aside h3 {
 /*******************************************Ancient Knowledge section**************/
 #ancientknowledge {
 	width: 100%;
-	background: rgba(255, 250, 205, 0.90);
+	background: rgba(255, 250, 205, 0.80);
 }
-#ancientknowledge img {
+#ancientknowledge img { /*was ancientknowledge img*/
+ 	max-width: 100%; /*just added, just in case this doesn't work remove*/
+	min-width: 28%; /*was 28--just added, just in case this doesn't work remove*/
 	float: right;
-	width: 28%;
+	/*width: 28%;*/ /*just commented out, just in case this doesn't work remove*/
 	position: relative;
 	top: 38px;
-	left: 22.9%; 
+	left: 22.9%;
 	/*position: fixed;
 	top: 500px;
 	left: 20%;*/
 	
 }
 #ancient_article {
+	width: 75%; /*was 100%--just changed*/
 	float: none;
 	padding-bottom: 30px;
 }
@@ -217,7 +220,7 @@ aside h3 {
 	float: none;
 	padding-right: 0;
 	padding-bottom: 10px;
-	width: 55%;
+	width: 60%; /*was 55%--just changed*/
 }
 /***************************************************End of Ancient Knowledge*******
 ***********************************************************************************/
@@ -239,7 +242,7 @@ aside h3 {
 **********************************************************************************/
 /*******************************************About Us section**********************/
 #aboutus {
-	background: rgba(255, 250, 205, 0.90);
+	background: rgba(255, 250, 205, 0.80);
 }
 #aboutus p {
 	padding-bottom: 10px;
@@ -258,6 +261,35 @@ blockquote {
 #signup {
 	background: #FFFACD;
 }
+form  {
+	background: #CCC;
+	border: 1px solid #333;
+	font-size: 1.1em;
+	padding-left: 2%;
+}
+input {
+    align: right;
+}
+#name_first {
+	margin-left: 3%;
+}
+#name_last {
+	margin-left: 3.5%;
+}
+#zip_code {
+	margin-left: 5%;
+}
+#email_address {
+}
+.row {
+	display: inline-block;
+	padding-left: 3%;
+	position: relative;
+	top: -25px;
+	left: 11.25%;
+	font-size: 1em;
+}
+
 /***************************************************End of Sign up section********
 **********************************************************************************/
 /*******************************************Footer settings***********************/
