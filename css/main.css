@@ -262,32 +262,70 @@ blockquote {
 	background: #FFFACD;
 }
 form  {
-	background: #CCC;
+	width: 70%; /*97.91666%;*/
+	/*background: #E0FFFF;*/
 	border: 1px solid #333;
 	font-size: 1.1em;
+	margin-top: 20px;
 	padding-left: 2%;
-}
-input {
-    align: right;
+	line-height: 1.6;
+	float: none; /*just added, today*/
 }
 #name_first {
-	margin-left: 3%;
+	margin-left: 3.2%;
 }
 #name_last {
-	margin-left: 3.5%;
+	margin-left: 3.6%;
 }
 #zip_code {
-	margin-left: 5%;
+	margin-left: 5.5%;
 }
 #email_address {
+	margin-left: 10.5%;
 }
 .row {
 	display: inline-block;
-	padding-left: 3%;
+	margin-right: 4%;
+	padding-left: 5.5%;
 	position: relative;
-	top: -25px;
-	left: 11.25%;
-	font-size: 1em;
+	top: -29px;
+	left: 12.8%;
+	font-size: 0.9em;
+}
+#birthday {
+	margin-top: -27px;
+}
+.birthday_label {
+	margin-right: 5.3%;
+}
+#newsletter_checkbox {
+	margin-left: 7.4%;
+	font-size: 0.85em;
+}
+#terms_checkbox {
+	margin-left: 7.4%;
+	font-size: 0.85em;
+}
+#social_media {
+	width: 25%;
+	height: 100px;
+	/*border: 1px solid #333;*/
+	position: relative;
+	top: -220px; /*-299px;*/
+	float: right; /*just added, today*/
+}
+#social_media h3 {
+	background: #333;
+	padding-bottom: 1px;
+	color: #E0FFFF;
+	font-weight: bold;
+}
+#social_media_icons {
+	padding-top: 20px;
+	padding-right: 5%;
+	padding-bottom: 20px;
+	padding-left: 12%;
+	background: #E0FFFF;
 }
 
 /***************************************************End of Sign up section********
@@ -295,14 +333,18 @@ input {
 /*******************************************Footer settings***********************/
 footer {
 	background: #E0FFFF;
+	width: 100%;
 }
 footer ul {
-	width: 97.91666%; /*940px; (940/960)*/
-	padding: 5px 0.53191%; /*5px left and right (5/940)*/
+	width: 100%; /*97.91666%;was not filling in the box*/ /*940px; (940/960)*/
+	padding-top: 20px;
+	padding-right: 0.53191%;
+	padding-left: 0.53191%;  /*5px 0.53191%;*/ /*5px left and right (5/940)*/
 }
 footer a {
 	width: 19.14893%; /*180px (180/940)*/
-	float: left;
+	float: left; /*float: left;*/ /*was left--today*/
+	/*clear: right;*/ /*was right,added today*/
 	padding-bottom: 5px;
 	text-decoration: none;
 	text-align: center;
@@ -338,7 +380,7 @@ a:active {
 	border: none;
 	border-radius: 4px;
 	box-shadow: 2px 2px 2px #333;
-	margin: 30px 0 10px 26px;
+	margin: 20px 15%; /*30px 0 10px 26px;*/
 	text-shadow: 1px 1px 3px #FFF;
 	width:  150px;
 	height: 40px;

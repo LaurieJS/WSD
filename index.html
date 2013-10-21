@@ -11,7 +11,6 @@
   		
   <body>
   <div id="wrapper">
-
   <header id="home">
     <img src="images/owl_logo.png" width="60" height="60" alt="knowledge.com logo" /> 
     <img src="images/logo_knowledge.png" width="160" height="24" alt="Logo for Knowledge" />
@@ -106,29 +105,29 @@
     <input type="text" name="zip_code" id="zip_code"/>
   </div>
   <div>
-    <label for="email_address">Email Address</label>
+    <label for="email_address">Email</label>
     <input type="text" name="email_address" id="email_address"/>
   </div>
   <fieldset class="radios">
-    <legend>Gender:</legend>
-    <p class="row">
+    <legend>Gender</legend>
+    <div class="row">
     <input type="radio" id="gender_male" name="gender" value="male"/>
     <label for="gender_male">Male</label>
-    </p>
+    </div><!--end of row div-->
     <p class="row">
     <input type="radio" id="gender_female" name="gender" value="female"/>
     <label for="gender_female">Female</label>
     </p>
   </fieldset>
-  <fieldset>
-
-    <label>Birthday</label>
+  
+  <fieldset id="birthday">
+    <label class="birthday_label">Birthday</label>
     <label class="month"></label>
-    <select id="select-style" name="BirthMonth">
+    <select id="select-style" name="Birthmonth">
     <option value="">Month</option>
     <option  value="01">January</option>
 	<option value="02">February</option>
-	<option value="03" >March</option>
+	<option value="03">March</option>
     <option value="04">April</option>
     <option value="05">May</option>
     <option value="06">June</option>
@@ -137,14 +136,32 @@
     <option value="09">September</option>
     <option value="10">October</option>
     <option value="11">November</option>
-    <option value="12" >December</option>
+    <option value="12">December</option>
     </select>   
-    <label>Day<input class="birthday" maxlength="2" name="BirthDay"  placeholder="Day" required=""></label>
-    <label>Year <input class="birthyear" maxlength="4" name="BirthYear" placeholder="Year" required=""></label>
+    <label>Day<input class="birthday" maxlength="2" size="4" name="Birthday"  placeholder="Day" required></label>
+    <label>Year <input class="birthyear" maxlength="4" size="4" name="Birthyear" placeholder="Year" required></label>
   </fieldset>
+  <div id="newsletter_checkbox">
+  <input type="checkbox" name="newsletter" id="newsletter"/>
+  <label for="newsletter">I would like to subscribe to the Knowledge.com newsletter.</label>
+  </div><!--the end of the newsletter div-->
+  <div id="terms_checkbox">
+    <input type="checkbox" name="terms" id="terms"/>
+    <label for="terms">I agree to the <a href="">terms of use.</a></label>
+  </div><!--the end of the terms div-->
+
 
   </form>
     <input type="submit" value="Sign Up" class="button"/>
+   
+  <div id="social_media">
+  <h3>Follow Us On:</h3>
+  <div id="social_media_icons">
+   <img src="images/facebook.png" width="60" height="60" alt="facebook icon" /><!--social media icons from elegantthemes.com--> 
+   <img src="images/twitter.png" width="60" height="60" alt="twitter icon" /> 
+   <img src="images/flickr.png" width="60" height="60" alt="flickr icon" /> 
+  </div><!--end of social media icons div--> 
+  </div><!--end of social media div-->
   </section>
 
   <footer>
