@@ -262,11 +262,13 @@ blockquote {
 	background: #FFFACD;
 }
 form  {
-	width: 70%; /*97.91666%;*/
+	width: 63%; /*97.91666%;*/
 	/*background: #E0FFFF;*/
-	border: 1px solid #333;
+	/*border: 1px solid #333;*/
 	font-size: 1.1em;
 	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
 	padding-left: 2%;
 	line-height: 1.6;
 	float: none; /*just added, today*/
@@ -293,31 +295,44 @@ form  {
 	font-size: 0.9em;
 }
 #birthday {
-	margin-top: -27px;
+	margin-top: 0; /*-27px;*/
+}
+.birthyear_label {
+	margin-left: -6.5%;
+}
+.birthyear {
+	margin-left: 0;
 }
 .birthday_label {
-	margin-right: 5.3%;
+	margin-right: 6%;
 }
 #newsletter_checkbox {
-	margin-left: 7.4%;
+	margin-left: 18.2%;
 	font-size: 0.85em;
+	position: relative;
+	top: -28px;
 }
 #terms_checkbox {
-	margin-left: 7.4%;
+	margin-left: 18.2%;
 	font-size: 0.85em;
+	position: relative;
+	top: -28px;
+}
+#terms_checkbox a {
+	text-decoration: none;
 }
 #social_media {
 	width: 25%;
 	height: 100px;
 	/*border: 1px solid #333;*/
 	position: relative;
-	top: -220px; /*-299px;*/
+	top: -260px; /*-299px;*/
 	float: right; /*just added, today*/
 }
 #social_media h3 {
-	background: #333;
+	background: #FFF;
 	padding-bottom: 1px;
-	color: #E0FFFF;
+	color: #333;
 	font-weight: bold;
 }
 #social_media_icons {
@@ -336,15 +351,16 @@ footer {
 	width: 100%;
 }
 footer ul {
-	width: 100%; /*97.91666%;was not filling in the box*/ /*940px; (940/960)*/
-	padding-top: 20px;
+	width: 100%; /*98.91666%;*/ /*was not filling in the box*/ /*940px; (940/960)*/
+	padding-top: 5px; /*was 20, today*/
 	padding-right: 0.53191%;
 	padding-left: 0.53191%;  /*5px 0.53191%;*/ /*5px left and right (5/940)*/
 }
 footer a {
-	width: 19.14893%; /*180px (180/940)*/
-	float: left; /*float: left;*/ /*was left--today*/
-	/*clear: right;*/ /*was right,added today*/
+	width: 18.14893%; /*180px (180/940)*/
+	float: left;
+	/*float: left;*/ /*float: left;*/ /*was left--today*/
+	clear: right; /*was right,added today*/
 	padding-bottom: 5px;
 	text-decoration: none;
 	text-align: center;
@@ -372,7 +388,7 @@ a:active {
 ***********************************************************************************/
 /**********************************************Buttons and Misc.*******************/
 .button {
-	font: normal normal normal 1.5em normal Quicksand, sans-serif;
+	font: normal normal normal 1.5em normal Quicksand,sans-serif;
 	/*font-family: Quicksand, sans-serif;
 	font-size: 1.5em; /*24px (24/16)*/
 	/*font-weight: bold;*/
@@ -380,7 +396,7 @@ a:active {
 	border: none;
 	border-radius: 4px;
 	box-shadow: 2px 2px 2px #333;
-	margin: 20px 15%; /*30px 0 10px 26px;*/
+	margin: -25px 18% 20px 18.7%; /*30px 0 10px 26px;*/
 	text-shadow: 1px 1px 3px #FFF;
 	width:  150px;
 	height: 40px;
