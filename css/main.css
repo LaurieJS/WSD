@@ -290,7 +290,7 @@ form  {
 	margin-right: 3%;
 	padding-left: 7.3%;
 	position: relative;
-	top: -29px;
+	top: -28px;
 	left: 12.8%;
 	font-size: 0.9em;
 }
@@ -310,13 +310,13 @@ form  {
 	margin-left: 20%; /*18.2%;*/
 	font-size: 0.85em;
 	position: relative;
-	top: -28px;
+	top: -27px;
 }
 #terms_checkbox {
 	margin-left: 20%;
 	font-size: 0.85em;
 	position: relative;
-	top: -28px;
+	top: -27px;
 }
 #terms_checkbox a {
 	text-decoration: none;
@@ -336,10 +336,7 @@ form  {
 	font-weight: bold;
 }
 #social_media_icons {
-	padding-top: 20px;
-	padding-right: 5%;
-	padding-bottom: 20px;
-	padding-left: 12%;
+	padding: 20px 5% 20px 12%;
 	background: #E0FFFF;
 }
 
@@ -359,8 +356,7 @@ footer ul {
 footer a {
 	width: 18.14893%; /*180px (180/940)*/
 	float: left;
-	/*float: left;*/ /*float: left;*/ /*was left--today*/
-	clear: right; /*was right,added today*/
+	clear: right; 
 	padding-bottom: 5px;
 	text-decoration: none;
 	text-align: center;
@@ -419,9 +415,8 @@ a:active {
 		font-size: 1.1em;
 		padding-left: 2%;
 	}
-	
 	#home {
-		/*background: honeyDew;*/
+		background: honeyDew;
 		background-image: none;
 	}
 	.column_text p {
@@ -457,7 +452,7 @@ a:active {
 		font-size: 1.1em;
 	}
 	#home {
-		/*background: mistyRose;*/
+		background: mistyRose;
 		background-image: none;
 	}
 	#main_section h2 {
@@ -471,14 +466,16 @@ a:active {
 	}
 	#ancientknowledge h2 {
 		padding-left: 4%;
-	}
-		
+	}	
 	.column_text {
 		width: auto;
 		padding-right: 3%;
 		-webkit-column-count: 1;
 		-moz-column-count: 1;
 		column-count: 1;
+	}
+	#ancient_article {
+		width: auto;
 	}
 	#ancientknowledge img {
 		float:none;
@@ -488,10 +485,9 @@ a:active {
 		left: 8%;
 	}
 	#ancient_article p {
-		width: auto;
-		padding-right: 6%;
+		width: 90%;
+		/*padding-right: 3%;*/
 		padding-left: 6%;
-	
 	}
 	#ancient_article h3 {
 		width: 100%;
@@ -510,9 +506,7 @@ a:active {
 	#signup {
 		padding-right: 2%;
 		padding-left: 2%;
-	}
-		
-	
+	}	
 }
 /*SMALL-Mobile Portrait size to Mobile Landscape size (devices and browsers)*/
 @media only screen and (max-width: 479px) {
@@ -526,7 +520,7 @@ a:active {
 		font-size: 1em;
 	}
 	#home {
-		/*background: lavender;*/
+		background: lavender;
 		background-image: none;
 	}
 	#home p {
@@ -579,6 +573,50 @@ a:active {
 		padding-right: 5%;
 		padding-left: 5%;
 	}
+	form {
+		width: 95%;
+		padding-left: 3%;
+	}
+	.form_field {
+		font-size: 0.95em;
+	}
+	.birthday_label, .birthyear_label {
+		font-size: 0.95em;
+	}
+	.radios legend {
+		font-size: 0.95em;
+	}
+	#name_first {
+		margin-left: 0.2%;
+	}
+	#name_last {
+		margin-left: 1%;
+	}
+	#zip_code {
+		margin-left: 3.8%;
+	}
+	#email_address {
+		margin-left: 11.9%;
+	}
+	.birthday_label {
+		margin-right: 4.5%;
+	}
+	.birthyear_label {
+		margin-left: -5%
+	}
+	.row {
+		padding-left: 11.5%;
+		position: relative;
+		top: -26px;
+		padding-bottom: 4px;
+	}
+	#newsletter_checkbox {
+		margin-left: 24%;
+		padding-bottom: 4px;
+	}
+	#terms_checkbox {
+		margin-left: 24%;
+	}
 	#signup_link {
 		display:none;
 	}
@@ -588,6 +626,12 @@ a:active {
 	}
 	footer ul li a {
 		margin: 0 2%;
+	}
+	#social_media {
+		display: none;
+	}
+	.button {
+		margin-left: 26.5%;
 	}
 }
 		
