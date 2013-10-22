@@ -247,6 +247,18 @@ aside h3 {
 #aboutus p {
 	padding-bottom: 10px;
 }
+table {
+	width: 55%;
+	margin-top: 25px;
+	margin-bottom: 35px;
+	position: relative;
+	left: 22%;
+}
+td, th {
+	border: 1px solid #333; /*#E9E9E9;*/
+	padding: 5px 1.5%;
+	text-align: left;
+}
 blockquote {
 	width: 83.333333%; /*800px (800/960)*/
 	text-indent: 2.5%; /*20px (20/800)*/
@@ -349,7 +361,7 @@ footer {
 }
 footer ul {
 	width: 100%; /*98.91666%;*/ /*was not filling in the box*/ /*940px; (940/960)*/
-	padding-top: 5px; /*was 20, today*/
+	padding-top: 0; /*5px;*/ /*was 20, today*/
 	padding-right: 0.53191%;
 	padding-left: 0.53191%;  /*5px 0.53191%;*/ /*5px left and right (5/940)*/
 }
@@ -357,11 +369,13 @@ footer a {
 	width: 18.14893%; /*180px (180/940)*/
 	float: left;
 	clear: right; 
-	padding-bottom: 5px;
+	padding-bottom: 0px; /*was 5*/
 	text-decoration: none;
 	text-align: center;
 	color: #FF5600;
 	font-weight: bold;
+	position: relative;
+	top: -25px;
 }
 footer p {
 	font-size: 0.75em; /*12px (12/16)*/
@@ -531,6 +545,11 @@ a:active {
 	#social_media {
 		display: none;
 	}
+	footer a {
+		position: relative;
+		top: 5px;
+		padding-bottom: 10px;
+	}
 }
 /*SMALL-Mobile Portrait size to Mobile Landscape size (devices and browsers)*/
 @media only screen and (max-width: 479px) {
@@ -649,9 +668,16 @@ a:active {
 		width: 100%;
 		list-style-type: none;
 	}
-	footer ul li a {
-		margin: 0 2%;
+	footer a {
+		position: relative;
+		top: 5px;
+		padding-bottom: 10px;
+		margin: 0 3%;
 	}
+
+	/*footer ul li a {
+		margin: 0 3%;
+	}*/
 	#social_media {
 		display: none;
 	}
