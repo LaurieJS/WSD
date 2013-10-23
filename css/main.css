@@ -369,9 +369,10 @@ footer ul {
 footer a {
 	clear: right;
 	margin-top: -20px;
-	margin-left: 9.5%;
+	/*margin-left: 2%;*/
+	/*margin-left: 9.5%;*/
 	float: left;
-	/*width: 17%;*/ /*18.14893%;*/ /*180px (180/940)*/
+	width: 18.14893%; /*18.14893%;*/ /*180px (180/940)*/
 	/*float: left;*/
 	/*padding: 0 2.5%;*/
 	/*padding-right: 2%;*/
@@ -379,7 +380,7 @@ footer a {
 	/*clear: both; */
 	padding-bottom: 0px; /*was 5*/
 	text-decoration: none;
-	/*text-align: center;*/
+	text-align: center;
 	color: #FF5600;
 	font-weight: bold;
 	position: relative;
