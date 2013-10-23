@@ -195,17 +195,12 @@ aside h3 {
 	background: rgba(255, 250, 205, 0.80);
 }
 #ancientknowledge img { /*was ancientknowledge img*/
- 	max-width: 100%; /*just added, just in case this doesn't work remove*/
-	min-width: 28%; /*was 28--just added, just in case this doesn't work remove*/
+ 	max-width: 100%; 
+	min-width: 28%; 
 	float: right;
-	/*width: 28%;*/ /*just commented out, just in case this doesn't work remove*/
 	position: relative;
 	top: 38px;
 	left: 22.9%;
-	/*position: fixed;
-	top: 500px;
-	left: 20%;*/
-	
 }
 #ancient_article {
 	width: 75%; /*was 100%--just changed*/
@@ -259,6 +254,9 @@ td, th {
 	padding: 5px 1.5%;
 	text-align: left;
 }
+td a {
+	text-decoration: none;
+}
 blockquote {
 	width: 83.333333%; /*800px (800/960)*/
 	text-indent: 2.5%; /*20px (20/800)*/
@@ -283,7 +281,7 @@ form  {
 	padding-bottom: 10px;
 	padding-left: 2%;
 	line-height: 1.6;
-	float: none; /*just added, today*/
+	float: none;
 }
 #name_first {
 	margin-left: 3.2%;
@@ -312,9 +310,6 @@ form  {
 .birthyear_label {
 	margin-left: -6.5%;
 }
-.birthyear {
-	margin-left: 0;
-}
 .birthday_label {
 	margin-right: 6.6%;
 }
@@ -336,10 +331,10 @@ form  {
 #social_media {
 	width: 25%;
 	height: 100px;
-	/*border: 1px solid #333;*/
+	/*border: 0.09em solid #333;*/ 
 	position: relative;
 	top: -260px; /*-299px;*/
-	float: right; /*just added, today*/
+	float: right;
 }
 #social_media h3 {
 	background: #E0FFFF;
@@ -351,7 +346,6 @@ form  {
 	padding: 20px 5% 20px 12%;
 	background: #E0FFFF;
 }
-
 /***************************************************End of Sign up section********
 **********************************************************************************/
 /*******************************************Footer settings***********************/
@@ -360,24 +354,13 @@ footer {
 	width: 100%;
 }
 footer ul {
-	/*min-width: 100%;*/
 	width: 100%; /*98.91666%;*/ /*was not filling in the box*/ /*940px; (940/960)*/
-	/*padding-top: 0;*/ /*5px;*/ /*was 20, today*/
-	/*padding-right: 0.53191%;
-	padding-left: 0.53191%;*/  /*5px 0.53191%;*/ /*5px left and right (5/940)*/
 }
 footer a {
 	clear: right;
 	margin-top: -20px;
-	/*margin-left: 2%;*/
-	/*margin-left: 9.5%;*/
 	float: left;
-	width: 18.14893%; /*18.14893%;*/ /*180px (180/940)*/
-	/*float: left;*/
-	/*padding: 0 2.5%;*/
-	/*padding-right: 2%;*/
-	/*float: left;*/
-	/*clear: both; */
+	width: 18.14893%;  /*180px (180/940)*/
 	padding-bottom: 0px; /*was 5*/
 	text-decoration: none;
 	text-align: center;
@@ -509,7 +492,6 @@ a:active {
 	}
 	#ancient_article p {
 		width: 90%;
-		/*padding-right: 3%;*/
 		padding-left: 6%;
 	}
 	#ancient_article h3 {
@@ -525,6 +507,11 @@ a:active {
 	#aboutus {
 		padding-right: 2%;
 		padding-left: 2%
+	}
+	table {
+		width: 75%;
+		position: relative;
+		left: 10%;
 	}
 	#signup {
 		padding-right: 2%;
@@ -557,6 +544,7 @@ a:active {
 	footer a {
 		position: relative;
 		top: 5px;
+		padding-top: 18px;
 		padding-bottom: 10px;
 	}
 }
@@ -621,6 +609,11 @@ a:active {
 		padding-right: 5%;
 		padding-left: 5%;
 	}
+	table {
+		width: 90%;
+		position: relative;
+		left: 5%;
+	}
 	#signup p {
 		padding-right: 5%;
 		padding-left: 5%;
@@ -683,10 +676,6 @@ a:active {
 		padding-bottom: 10px;
 		margin: 0 3%;
 	}
-
-	/*footer ul li a {
-		margin: 0 3%;
-	}*/
 	#social_media {
 		display: none;
 	}
