@@ -360,27 +360,35 @@ footer {
 	width: 100%;
 }
 footer ul {
+	/*min-width: 100%;*/
 	width: 100%; /*98.91666%;*/ /*was not filling in the box*/ /*940px; (940/960)*/
-	padding-top: 0; /*5px;*/ /*was 20, today*/
-	padding-right: 0.53191%;
-	padding-left: 0.53191%;  /*5px 0.53191%;*/ /*5px left and right (5/940)*/
+	/*padding-top: 0;*/ /*5px;*/ /*was 20, today*/
+	/*padding-right: 0.53191%;
+	padding-left: 0.53191%;*/  /*5px 0.53191%;*/ /*5px left and right (5/940)*/
 }
 footer a {
-	width: 18.14893%; /*180px (180/940)*/
+	clear: right;
+	margin-top: -20px;
+	margin-left: 9.5%;
 	float: left;
-	clear: right; 
+	/*width: 17%;*/ /*18.14893%;*/ /*180px (180/940)*/
+	/*float: left;*/
+	/*padding: 0 2.5%;*/
+	/*padding-right: 2%;*/
+	/*float: left;*/
+	/*clear: both; */
 	padding-bottom: 0px; /*was 5*/
 	text-decoration: none;
-	text-align: center;
+	/*text-align: center;*/
 	color: #FF5600;
 	font-weight: bold;
 	position: relative;
-	top: -25px;
+	top: -15px;
 }
 footer p {
 	font-size: 0.75em; /*12px (12/16)*/
 	padding-bottom: 5px;
-	clear: left;
+	clear: both;
 }
 a:link {
 	color: #FF5600;
