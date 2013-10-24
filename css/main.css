@@ -144,28 +144,38 @@ h1 {
 /*****************************************Main content settings********************/
 #main_section {
 	background: #FFFACD;
-	clear: right;
+	/*clear: right;*/ /* commented out, today 10-24 working*/
 	padding-bottom: 20px;
+	overflow: hidden; /* just added, today 10-24 working*/
 }
+#main_section:before, #main_section:after {
+	content: "";
+	display: table;
+}
+#main_section:after {
+	clear: both;
+}/* added these today for clearfix, today 10-24 working*/
 #main_section img {
 	margin-bottom: 0;
 	padding-bottom: 0;
+	float:none; /* just added, because the aside is popping up here, today 10-24 working*/
 }
 aside {
-	width: 20%; 
+	width: 20%; /* was 20%, today 10-24 working*/ 
 	background: #E0FFFF;
 	float: right;
-	padding: 30px 3.5%; 
+	padding: 30px 3.5%;  /* commented out, today 10-24 working*/
 	margin-top: 0;
-	position: relative;
-	top: -382px;/*was-332, -416px*/
+	margin-right: 2%; /* just added, today 10-24 working*/
+	/*position: relative;
+	top: -382px; *//*was-332, -416px*/ /* commented out, today 10-24 working*/
 }
 aside ul {
 	font-size: 1.0625em; /*17px (17/16)*/
 	font-style: italic;
 	list-style-type: square;
 	line-height: 1.5;
-	padding-left: 16.2%;
+	padding-left: 16.2%; /*16.2%; just changed, today 10-24 working*/
 }
 aside h3 {
 	padding-bottom: 10px;
@@ -173,8 +183,8 @@ aside h3 {
 	text-shadow: 1px 1px 2px #003;
 }
 .column_text {
-	 width: 70%;
-	 float: none; 
+	width: 70%;/* was 70% today 10-24 working*/
+	float: left; /*float: none;*/  /* commented out, today 10-24 working*/
     -moz-column-count: 2; 
     -webkit-column-count: 2; 
     column-count: 2;
@@ -192,14 +202,18 @@ aside h3 {
 #ancientknowledge {
 	width: 100%;
 	background: rgba(255, 250, 205, 0.80);
+	clear: both; /* just added, today 10-24 working*/
+	overflow: hidden;
 }
 #ancientknowledge img { /*was ancientknowledge img*/
  	max-width: 100%; 
 	min-width: 28%; 
 	float: right;
-	position: relative;
+	padding-right: 2%; /*just added, today 10-24 working*/
+	padding-bottom: 40px;
+	/*position: relative;
 	top: 38px;
-	left: 21.3%; /*was left: 22.9%*/
+	left: 21.3%;*/ /*was left: 22.9%*/
 }
 #ancient_article {
 	width: 75%; /*was 100%--just changed*/
@@ -208,13 +222,14 @@ aside h3 {
 }
 #ancient_article h3 {
 	width: 100%;
-	padding: 5px 1.6%;
+	padding: 5px 3%; /*1.6%;just chnaged from 5px 1.6% today 10-24 working*/
 }
 #ancient_article p {
 	float: none;
-	padding-right: 0;
+	padding-right: 1%;
 	padding-bottom: 10px;
-	width: 60%; /*was 55%--just changed*/
+	padding-left: 3%;
+	width: 80%; /*was 60%--just changed*/ /* changed from 60%, today 10-24 working*/
 }
 /***************************************************End of Ancient Knowledge*******
 ***********************************************************************************/
@@ -354,6 +369,7 @@ form  {
 	top: -252px;*/ /*was -260, -299px;*/ /*commented out position and top, figuring this out today, 10-24*/
 	float: right; /*changed was right, figuring this out today, 10-24*/
 	margin-top: 30px; /*commented out, figuring this out today, 10-24*/
+	padding-right: 2%;
 }
 #social_media h3 {
 	background: #E0FFFF;
@@ -461,7 +477,7 @@ input:active {
 	}
 	h2 {
 		font-size: 1.4em;
-		padding-left: 3%;
+		padding-left: 2%;
 	}
 	h3 {
 		font-size: 1.1em;
@@ -472,23 +488,26 @@ input:active {
 		background-image: none;
 	}
 	.column_text p {
-		padding-left: 8%;
+		padding-left: 10%;
 	}
-	aside {
+	/*aside {
 		position: relative;
 		top: -413px;
-	}
+	}*/ /* commented out, today 10-24 working*/
 	#ancientknowledge img {
 		width: 27%;
 	}
 	#ancient_article {
-		min-width: 90%;
+		min-width: 80%;
 		padding-left: 1.15%;
 	}
 	#gallery img {
 		/*padding-left: 25%;*/
 	}
 	#aboutus p, #signup p {
+		padding-left: 3%;
+	}
+	form {
 		padding-left: 3%;
 	}
 }
@@ -591,10 +610,11 @@ input:active {
 		display: none;
 	}
 	footer a {
-		position: relative;
+		/*position: relative;
 		top: 5px;
 		padding-top: 18px;
-		padding-bottom: 10px;
+		padding-bottom: 10px;*/
+		padding-left: 6%;
 	}
 }
 /*SMALL-Mobile Portrait size to Mobile Landscape size (devices and browsers)*/
@@ -622,12 +642,13 @@ input:active {
 		display: none;
 	}
 	#ancientknowledge img {
-		float: none;
-		margin-left: -18%;
+		float: none;/*float: none;*//* changed from float:none, today 10-24 working*/
+		margin-left: 5%;
+		margin-bottom: -80px;
 		width: 50%;
 	}
 	#ancientknowledge h2{
-		margin-bottom: -40px;
+		margin-bottom: 0px;
 	}
 	.column_text {
 		-webkit-column-count: 1;
@@ -672,7 +693,7 @@ input:active {
 	}
 	form {
 		width: 95%;
-		padding-left: 3%;
+		padding-left: 5%;
 		line-height: 1.9;
 	}
 	.form_field {
@@ -725,10 +746,11 @@ input:active {
 		list-style-type: none;
 	}
 	footer a {
-		position: relative;
+		/*position: relative;
 		top: 5px;
 		padding-bottom: 10px;
-		margin: 0 3%;
+		margin: 0 3%;*/
+		padding-left: 5%;
 	}
 	#social_media {
 		display: none;
