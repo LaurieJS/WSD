@@ -275,17 +275,26 @@ blockquote {
 /*******************************************Sign up section***********************/
 #signup {
 	background: #FFFACD;
+	overflow: hidden; /*commented out, figuring this out today, 10-24*/
 }
+#signup:before, #signup:after {
+	content: "";
+	display: table;
+}
+#signup:after {
+	clear: both;
+}/*just added to try clearfix*/
 form  {
 	width: 63%; /*was 63%---97.91666%;*/
 	/*border: 1px solid #333;*/
 	font-size: 1.1em;
 	margin-top: 5px; /*was 20px*/
-	padding-top: 10px;/*was20px*/
-	padding-bottom: 20px; /*was10 today 10-23*/
+	padding-top: 25px;/*was10px*/
+	padding-bottom: 30px; /*was20 today 10-24*/
 	padding-left: 2%;
-	line-height: 1.6;
-	float: none;
+	line-height: 1.7; /*was 1.6, figuring this out today, 10-24*/
+	/*float: none;*/
+	float:left; /*added today, figuring this out today, 10-24*/
 }
 #name_first {
 	margin-left: 3.2%;
@@ -338,12 +347,13 @@ form  {
 	text-decoration: none;
 }
 #social_media {
-	width: 24%; /*was 25%*/
-	height: 90px; /*was 100px*/
+	width: 22%; /*was 24%*/ /*was 24%, figuring this out today, 10-24*/
+	height: 60px; /*was 90px*/
 	/*border: 0.09em solid #333;*/ 
-	position: relative;
-	top: -252px; /*was -260, -299px;*/
-	float: right;
+	/*position: relative;
+	top: -252px;*/ /*was -260, -299px;*/ /*commented out position and top, figuring this out today, 10-24*/
+	float: right; /*changed was right, figuring this out today, 10-24*/
+	margin-top: 30px; /*commented out, figuring this out today, 10-24*/
 }
 #social_media h3 {
 	background: #E0FFFF;
@@ -354,41 +364,52 @@ form  {
 	text-shadow: 1px 1px 2px #003;
 }
 #social_media_icons {
-	padding: 3px 5% 3px 10%;
+	padding-left: 5%; /*3px 5% 3px 10%;*/ /*changed see previous comment, figuring this out today, 10-24*/
 	background: #E0FFFF;
 }
 /***************************************************End of Sign up section********
 **********************************************************************************/
 /*******************************************Footer settings***********************/
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}/*added the clearfixes today, figuring this out today, 10-24*/
 footer {
 	background: #E0FFFF;
 	width: 100%;
+	/*padding-bottom: 0;*/
 	/*clear: left;*/
-	float: none;
+	/*float: none;*/ /*commented out, figuring this out today, 10-24*/
 }
 footer ul {
-	width: 100%; /*98.91666%;*/ /*was not filling in the box*/ /*940px; (940/960)*/
+	width: 100%; /*changed from 100%*//*98.91666%;*/ /*was not filling in the box*/ /*940px; (940/960)*/
 	margin-top: 0px; /*added today*/
 	/*overflow:auto;*/ /*added today*/
-	clear: left;
+	/*clear: left;*/ /*commented out, figuring this out today, 10-24*/
 }
 footer a {
-	clear: right;
-	/*padding-top: -50px;*/ /*may be completely useless, was -20px*/
-	float: left;
-	width: 18.14893%;  /*180px (180/940)*/
+	/*clear: right;*/ /*commented out, figuring this out today, 10-24*/
+	margin-top: 10px; /*may be completely useless, was -50px*/ /*changed from -50px, figuring this out today, 10-24*/
+	margin-bottom: 15px; /*added today, figuring this out today, 10-24*/
+	/*float: left;*/ /*commented out, figuring this out today, 10-24*/
+	/*width: 18.14893%;*/  /*180px (180/940)*/ /*commented out, figuring this out today, 10-24*/
 	padding-bottom: 0px; /*was 5*/
+	padding-left: 8.5%; /*added today, figuring this out today, 10-24*/
 	text-decoration: none;
 	text-align: center;
 	color: #FF5600;
 	font-weight: bold;
-	position: relative;
-	top: -15px;
+	/*position: relative;
+	top: -15px;*/ /*commented out, figuring this out today, 10-24*/
+	float: left;
 }
 footer p {
 	font-size: 0.75em; /*12px (12/16)*/
 	padding-bottom: 5px;
-	clear: both;
+	clear: both; /*commented out, figuring this out today, 10-24*/
 }
 a:link {
 	color: #FF5600;
@@ -414,7 +435,7 @@ a:active {
 	border: none;
 	border-radius: 4px;
 	box-shadow: 2px 2px 2px #333;
-	margin: -25px 18% 20px 20.5%; /*-25px 18% 20px 14.7%-30px 0 10px 26px; top-right-bottom-left*/
+	margin: -25px 18% 0 20.5%; /*-25px 18% 20px 14.7%-30px 0 10px 26px; top-right-bottom-left*//*changed 20px to 0, figuring this out today, 10-24*/
 	text-shadow: 1px 1px 3px #FFF;
 	width:  150px;
 	height: 40px;
