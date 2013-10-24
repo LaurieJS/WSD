@@ -117,7 +117,7 @@ h1 {
 	width: 97.91666%; /*940px (940/960)*/
 	margin: 0 auto;
 	list-style-type: none;
-	padding:5px 2.34042% 22px 2.34042%; /*was (22px,22px,22px,22px)top, right, bottom, left*/
+	padding:5px 2.34042% 22px 2.34042%; 
 }
 #home ul li a {
 	width: 24.47916%; /*235px (235/960)*/
@@ -144,9 +144,8 @@ h1 {
 /*****************************************Main content settings********************/
 #main_section {
 	background: #FFFACD;
-	/*clear: right;*/ /* commented out, today 10-24 working*/
 	padding-bottom: 20px;
-	overflow: hidden; /* just added, today 10-24 working*/
+	overflow: hidden; 
 }
 #main_section:before, #main_section:after {
 	content: "";
@@ -154,28 +153,26 @@ h1 {
 }
 #main_section:after {
 	clear: both;
-}/* added these today for clearfix, today 10-24 working*/
+}
 #main_section img {
 	margin-bottom: 0;
 	padding-bottom: 0;
-	float:none; /* just added, because the aside is popping up here, today 10-24 working*/
+	float:none; 
 }
 aside {
-	width: 20%; /* was 20%, today 10-24 working*/ 
+	width: 20%; 
 	background: #E0FFFF;
 	float: right;
-	padding: 30px 3.5%;  /* commented out, today 10-24 working*/
+	padding: 30px 3.5%;  
 	margin-top: 0;
-	margin-right: 2%; /* just added, today 10-24 working*/
-	/*position: relative;
-	top: -382px; *//*was-332, -416px*/ /* commented out, today 10-24 working*/
+	margin-right: 2%; 
 }
 aside ul {
 	font-size: 1.0625em; /*17px (17/16)*/
 	font-style: italic;
 	list-style-type: square;
 	line-height: 1.5;
-	padding-left: 16.2%; /*16.2%; just changed, today 10-24 working*/
+	padding-left: 16.2%; 
 }
 aside h3 {
 	padding-bottom: 10px;
@@ -183,8 +180,8 @@ aside h3 {
 	text-shadow: 1px 1px 2px #003;
 }
 .column_text {
-	width: 70%;/* was 70% today 10-24 working*/
-	float: left; /*float: none;*/  /* commented out, today 10-24 working*/
+	width: 70%;
+	float: left;
     -moz-column-count: 2; 
     -webkit-column-count: 2; 
     column-count: 2;
@@ -202,34 +199,31 @@ aside h3 {
 #ancientknowledge {
 	width: 100%;
 	background: rgba(255, 250, 205, 0.80);
-	clear: both; /* just added, today 10-24 working*/
+	clear: both; 
 	overflow: hidden;
 }
-#ancientknowledge img { /*was ancientknowledge img*/
+#ancientknowledge img { 
  	max-width: 100%; 
 	min-width: 28%; 
 	float: right;
-	padding-right: 2%; /*just added, today 10-24 working*/
+	padding-right: 2%; 
 	padding-bottom: 40px;
-	/*position: relative;
-	top: 38px;
-	left: 21.3%;*/ /*was left: 22.9%*/
 }
 #ancient_article {
-	width: 75%; /*was 100%--just changed*/
+	width: 75%; 
 	float: none;
 	padding-bottom: 30px;
 }
 #ancient_article h3 {
 	width: 100%;
-	padding: 5px 3%; /*1.6%;just chnaged from 5px 1.6% today 10-24 working*/
+	padding: 5px 3%; 
 }
 #ancient_article p {
 	float: none;
 	padding-right: 1%;
 	padding-bottom: 10px;
 	padding-left: 3%;
-	width: 80%; /*was 60%--just changed*/ /* changed from 60%, today 10-24 working*/
+	width: 80%; 
 }
 /***************************************************End of Ancient Knowledge*******
 ***********************************************************************************/
@@ -267,7 +261,7 @@ caption {
 	padding-right: 67%;
 }
 td, th {
-	border: 1.75px solid #333; /*#E9E9E9;*/
+	border: 1.75px solid #333;
 	padding: 5px 1.5%;
 	text-align: left;
 }
@@ -290,7 +284,7 @@ blockquote {
 /*******************************************Sign up section***********************/
 #signup {
 	background: #FFFACD;
-	overflow: hidden; /*commented out, figuring this out today, 10-24*/
+	overflow: hidden; 
 }
 #signup:before, #signup:after {
 	content: "";
@@ -298,18 +292,16 @@ blockquote {
 }
 #signup:after {
 	clear: both;
-}/*just added to try clearfix*/
+}
 form  {
-	width: 63%; /*was 63%---97.91666%;*/
-	/*border: 1px solid #333;*/
+	width: 63%; 
 	font-size: 1.1em;
-	margin-top: 5px; /*was 20px*/
-	padding-top: 25px;/*was10px*/
-	padding-bottom: 30px; /*was20 today 10-24*/
+	margin-top: 5px; 
+	padding-top: 25px;
+	padding-bottom: 30px; 
 	padding-left: 2%;
-	line-height: 1.7; /*was 1.6, figuring this out today, 10-24*/
-	/*float: none;*/
-	float:left; /*added today, figuring this out today, 10-24*/
+	line-height: 1.7; 
+	float:left; 
 }
 #name_first {
 	margin-left: 3.2%;
@@ -333,21 +325,19 @@ form  {
 	font-size: 0.9em;
 }
 #birthday {
-	margin-top: 0; /*-27px;*/
+	margin-top: 0;
 }
 .year_label {
 	font-size: 0.9em;
-	/*margin-left: 0.05%;*/
 }
 .day_label {
 	font-size: 0.9em;
-	/*margin-left: 0.05%;*/
 }
 .birthday_label {
 	margin-right: 6.6%;
 }
 #newsletter_checkbox {
-	margin-left: 20%; /*18.2%;*/
+	margin-left: 20%; 
 	font-size: 0.85em;
 	position: relative;
 	top: -27px;
@@ -362,13 +352,10 @@ form  {
 	text-decoration: none;
 }
 #social_media {
-	width: 22%; /*was 24%*/ /*was 24%, figuring this out today, 10-24*/
-	height: 60px; /*was 90px*/
-	/*border: 0.09em solid #333;*/ 
-	/*position: relative;
-	top: -252px;*/ /*was -260, -299px;*/ /*commented out position and top, figuring this out today, 10-24*/
-	float: right; /*changed was right, figuring this out today, 10-24*/
-	margin-top: 30px; /*commented out, figuring this out today, 10-24*/
+	width: 22%; 
+	height: 60px;
+	float: right;
+	margin-top: 30px;
 	padding-right: 2%;
 }
 #social_media h3 {
@@ -380,7 +367,7 @@ form  {
 	text-shadow: 1px 1px 2px #003;
 }
 #social_media_icons {
-	padding-left: 5%; /*3px 5% 3px 10%;*/ /*changed see previous comment, figuring this out today, 10-24*/
+	padding-left: 5%;
 	background: #E0FFFF;
 }
 /***************************************************End of Sign up section********
@@ -392,40 +379,30 @@ form  {
 }
 .clearfix:after {
 	clear: both;
-}/*added the clearfixes today, figuring this out today, 10-24*/
+}
 footer {
 	background: #E0FFFF;
 	width: 100%;
-	/*padding-bottom: 0;*/
-	/*clear: left;*/
-	/*float: none;*/ /*commented out, figuring this out today, 10-24*/
 }
 footer ul {
-	width: 100%; /*changed from 100%*//*98.91666%;*/ /*was not filling in the box*/ /*940px; (940/960)*/
-	margin-top: 0px; /*added today*/
-	/*overflow:auto;*/ /*added today*/
-	/*clear: left;*/ /*commented out, figuring this out today, 10-24*/
+	width: 100%;
+	margin-top: 0px;
 }
 footer a {
-	/*clear: right;*/ /*commented out, figuring this out today, 10-24*/
-	margin-top: 10px; /*may be completely useless, was -50px*/ /*changed from -50px, figuring this out today, 10-24*/
-	margin-bottom: 15px; /*added today, figuring this out today, 10-24*/
-	/*float: left;*/ /*commented out, figuring this out today, 10-24*/
-	/*width: 18.14893%;*/  /*180px (180/940)*/ /*commented out, figuring this out today, 10-24*/
+	margin-top: 10px;
+	margin-bottom: 15px;
 	padding-bottom: 0px; /*was 5*/
-	padding-left: 8.5%; /*added today, figuring this out today, 10-24*/
+	padding-left: 8.5%; 
 	text-decoration: none;
 	text-align: center;
 	color: #FF5600;
 	font-weight: bold;
-	/*position: relative;
-	top: -15px;*/ /*commented out, figuring this out today, 10-24*/
 	float: left;
 }
 footer p {
 	font-size: 0.75em; /*12px (12/16)*/
 	padding-bottom: 5px;
-	clear: both; /*commented out, figuring this out today, 10-24*/
+	clear: both; 
 }
 a:link {
 	color: #FF5600;
@@ -444,14 +421,11 @@ a:active {
 /**********************************************Buttons and Misc.*******************/
 .button {
 	font: normal normal normal 1.5em normal Quicksand,sans-serif;
-	/*font-family: Quicksand, sans-serif;
-	font-size: 1.5em; /*24px (24/16)*/
-	/*font-weight: bold;*/
 	background-color: #FF5600;
 	border: none;
 	border-radius: 4px;
 	box-shadow: 2px 2px 2px #333;
-	margin: -25px 18% 0 20.5%; /*-25px 18% 20px 14.7%-30px 0 10px 26px; top-right-bottom-left*//*changed 20px to 0, figuring this out today, 10-24*/
+	margin: -25px 18% 0 20.5%;
 	text-shadow: 1px 1px 3px #FFF;
 	width:  150px;
 	height: 40px;
@@ -484,28 +458,23 @@ input:active {
 		padding-left: 2%;
 	}
 	#home {
-		background: honeyDew;
+		/*background: honeyDew;*/
 		background-image: none;
 	}
 	.column_text p {
-		padding-left: 10%;
+		padding-left: 6%;
 	}
-	/*aside {
-		position: relative;
-		top: -413px;
-	}*/ /* commented out, today 10-24 working*/
 	#ancientknowledge img {
 		width: 27%;
 	}
 	#ancient_article {
 		min-width: 80%;
-		padding-left: 1.15%;
 	}
 	#gallery img {
 		/*padding-left: 25%;*/
 	}
 	#aboutus p, #signup p {
-		padding-left: 3%;
+		padding-left: 2%;
 	}
 	form {
 		padding-left: 3%;
@@ -526,7 +495,7 @@ input:active {
 		font-size: .95em;
 	}
 	#home {
-		background: mistyRose;
+		/*background: mistyRose;*/
 		background-image: none;
 	}
 	#main_section h2 {
@@ -610,11 +579,10 @@ input:active {
 		display: none;
 	}
 	footer a {
-		/*position: relative;
-		top: 5px;
-		padding-top: 18px;
-		padding-bottom: 10px;*/
-		padding-left: 6%;
+		padding-left: 11%;
+	}
+	#signup_link {
+		display:none;
 	}
 }
 /*SMALL-Mobile Portrait size to Mobile Landscape size (devices and browsers)*/
@@ -629,7 +597,7 @@ input:active {
 		font-size: 1em;
 	}
 	#home {
-		background: lavender;
+		/*background: lavender;*/
 		background-image: none;
 	}
 	#home p {
@@ -642,7 +610,7 @@ input:active {
 		display: none;
 	}
 	#ancientknowledge img {
-		float: none;/*float: none;*//* changed from float:none, today 10-24 working*/
+		float: none;
 		margin-left: 5%;
 		margin-bottom: -80px;
 		width: 50%;
@@ -673,7 +641,7 @@ input:active {
 		padding-left: 5%;
 	}
 	#gallery img {
-		padding: 0 22.5%; /*0 14%;*/
+		padding: 0 22.5%;
 	}
 	#aboutus p {
 		padding-right: 5%;
@@ -746,11 +714,7 @@ input:active {
 		list-style-type: none;
 	}
 	footer a {
-		/*position: relative;
-		top: 5px;
-		padding-bottom: 10px;
-		margin: 0 3%;*/
-		padding-left: 5%;
+		padding-left: 6%;
 	}
 	#social_media {
 		display: none;
