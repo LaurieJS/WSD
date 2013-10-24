@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* CSS Document */
 /*****************************************Color Palette*****************************
 Light cyan (header,footer and aside) #E0FFFF (209, 255, 204)
@@ -159,7 +158,7 @@ aside {
 	padding: 30px 3.5%; 
 	margin-top: 0;
 	position: relative;
-	top: -416px;
+	top: -382px;/*was-332, -416px*/
 }
 aside ul {
 	font-size: 1.0625em; /*17px (17/16)*/
@@ -200,7 +199,7 @@ aside h3 {
 	float: right;
 	position: relative;
 	top: 38px;
-	left: 22.9%;
+	left: 21.3%; /*was left: 22.9%*/
 }
 #ancient_article {
 	width: 75%; /*was 100%--just changed*/
@@ -249,13 +248,19 @@ table {
 	position: relative;
 	left: 22%;
 }
+caption {
+	padding-right: 67%;
+}
 td, th {
-	border: 1px solid #333; /*#E9E9E9;*/
+	border: 1.75px solid #333; /*#E9E9E9;*/
 	padding: 5px 1.5%;
 	text-align: left;
 }
 td a {
 	text-decoration: none;
+}
+th {
+	/*background: white;*/
 }
 blockquote {
 	width: 83.333333%; /*800px (800/960)*/
@@ -272,13 +277,12 @@ blockquote {
 	background: #FFFACD;
 }
 form  {
-	width: 63%; /*97.91666%;*/
-	/*background: #E0FFFF;*/
+	width: 63%; /*was 63%---97.91666%;*/
 	/*border: 1px solid #333;*/
 	font-size: 1.1em;
-	margin-top: 20px;
-	padding-top: 20px;
-	padding-bottom: 10px;
+	margin-top: 5px; /*was 20px*/
+	padding-top: 10px;/*was20px*/
+	padding-bottom: 20px; /*was10 today 10-23*/
 	padding-left: 2%;
 	line-height: 1.6;
 	float: none;
@@ -307,8 +311,13 @@ form  {
 #birthday {
 	margin-top: 0; /*-27px;*/
 }
-.birthyear_label {
-	margin-left: -6.5%;
+.year_label {
+	font-size: 0.9em;
+	/*margin-left: 0.05%;*/
+}
+.day_label {
+	font-size: 0.9em;
+	/*margin-left: 0.05%;*/
 }
 .birthday_label {
 	margin-right: 6.6%;
@@ -329,21 +338,23 @@ form  {
 	text-decoration: none;
 }
 #social_media {
-	width: 25%;
-	height: 100px;
+	width: 24%; /*was 25%*/
+	height: 90px; /*was 100px*/
 	/*border: 0.09em solid #333;*/ 
 	position: relative;
-	top: -260px; /*-299px;*/
+	top: -252px; /*was -260, -299px;*/
 	float: right;
 }
 #social_media h3 {
 	background: #E0FFFF;
-	padding-bottom: 1px;
+	padding-top: 5px;
+	padding-left: 5%;
 	color: #333;
 	font-weight: bold;
+	text-shadow: 1px 1px 2px #003;
 }
 #social_media_icons {
-	padding: 20px 5% 20px 12%;
+	padding: 3px 5% 3px 10%;
 	background: #E0FFFF;
 }
 /***************************************************End of Sign up section********
@@ -352,13 +363,18 @@ form  {
 footer {
 	background: #E0FFFF;
 	width: 100%;
+	/*clear: left;*/
+	float: none;
 }
 footer ul {
 	width: 100%; /*98.91666%;*/ /*was not filling in the box*/ /*940px; (940/960)*/
+	margin-top: 0px; /*added today*/
+	/*overflow:auto;*/ /*added today*/
+	clear: left;
 }
 footer a {
 	clear: right;
-	margin-top: -20px;
+	/*padding-top: -50px;*/ /*may be completely useless, was -20px*/
 	float: left;
 	width: 18.14893%;  /*180px (180/940)*/
 	padding-bottom: 0px; /*was 5*/
@@ -398,12 +414,21 @@ a:active {
 	border: none;
 	border-radius: 4px;
 	box-shadow: 2px 2px 2px #333;
-	margin: -25px 18% 20px 14.7%; /*30px 0 10px 26px; top-right-bottom-left*/
+	margin: -25px 18% 20px 20.5%; /*-25px 18% 20px 14.7%-30px 0 10px 26px; top-right-bottom-left*/
 	text-shadow: 1px 1px 3px #FFF;
 	width:  150px;
 	height: 40px;
 	background: -moz-linear-gradient(top, #f3c5bd 0%, #ea2803 9%, #ea2803 34%, #ff6600 75%, #e86c57 94%, #c72200 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3c5bd), color-stop(9%,#ea2803), color-stop(34%,#ea2803),     color-stop(75%,#ff6600), color-stop(94%,#e86c57), color-stop(100%,#c72200)); /* Thanks to Colorzilla.com for helping with the gradient*/
+}
+input:hover {
+	color: #FFFACD;
+}
+input:focus {
+	color: #FF5600;
+}
+input:active {
+	color: #333;
 }
 /***************************************************End of buttons and Misc.*********
 ************************************************************************************/
@@ -440,7 +465,7 @@ a:active {
 		padding-left: 1.15%;
 	}
 	#gallery img {
-		padding-left: 25%;
+		/*padding-left: 25%;*/
 	}
 	#aboutus p, #signup p {
 		padding-left: 3%;
@@ -457,6 +482,9 @@ a:active {
 	h3 {
 		font-size: 1.1em;
 	}
+	header a, footer a {
+		font-size: .95em;
+	}
 	#home {
 		background: mistyRose;
 		background-image: none;
@@ -465,7 +493,7 @@ a:active {
 		padding-left: 4%;
 	}
 	#home ul {
-		padding-bottom: 50px;
+		padding-bottom: 43px;
 	}
 	#main_section aside {
 		display: none;
@@ -502,7 +530,7 @@ a:active {
 		padding-left: 4%;
 	}
 	#gallery img {
-		padding-left: 12%;
+		padding-left: 16%;
 	}
 	#aboutus {
 		padding-right: 2%;
@@ -536,7 +564,7 @@ a:active {
 		margin-left: 17.9%;
 	}
 	.button {
-		margin-left: 19%;
+		margin-left: 18.5%;
 	}
 	#social_media {
 		display: none;
@@ -567,7 +595,7 @@ a:active {
 		padding-left: 3%;
 	}
 	#home ul {
-		padding-bottom: 50px;
+		padding-bottom: 40px;
 	}
 	#main_section aside {
 		display: none;
@@ -603,7 +631,7 @@ a:active {
 		padding-left: 5%;
 	}
 	#gallery img {
-		padding: 0 14%;
+		padding: 0 22.5%; /*0 14%;*/
 	}
 	#aboutus p {
 		padding-right: 5%;
@@ -613,6 +641,9 @@ a:active {
 		width: 90%;
 		position: relative;
 		left: 5%;
+	}
+	caption {
+		display: none;
 	}
 	#signup p {
 		padding-right: 5%;
@@ -659,9 +690,11 @@ a:active {
 	#newsletter_checkbox {
 		margin-left: 19.3%;
 		padding-bottom: 4px;
+		font-size: 0.9em;
 	}
 	#terms_checkbox {
 		margin-left: 19.3%;
+		font-size: 0.9em;
 	}
 	#signup_link {
 		display:none;

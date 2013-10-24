@@ -79,9 +79,10 @@
     <h2>About Us</h2>
     <p>The folks at Knowledge.com <strong>really</strong> love owls. This site is dedicated to all of those owl
       lovers out there who would like to spend some time learning about these magnificent, mysterious, and wise creatures.</p>
-    <p>If you have any questions, comments, or would like to submit content feel free to contact us at:</p>
+    <p>If you have any questions, comments, or would like to submit content feel free to contact us:</p>
     
-  <table border="1">
+  <table> <!--summary="Contact Information" the HTML validator said that the summary attribute is obsolete-->
+    <caption>Contact Information</caption>
     <tr>
       <th>Questions or Comments:</th>
       <td><a href="">info&#64;knowledge.com</a></td>
@@ -110,7 +111,7 @@
     <h2>Sign Up</h2>
     <p>Sign up to receive emails about our newest owl knowledge. Don't worry, we only send emails once a week.</p>
     
-  <form>
+  <form method="get" action="mailto:subscribe@knowledge.com">
   <div class="form_field">
     <label for="name_first">First Name</label>
     <input type="text" name="name_first" id="name_first"/>
@@ -147,8 +148,8 @@
     <option value="11">November</option>
     <option value="12">December</option>
     </select>   
-    <label class="birthday_label">Day<input class="birthday" maxlength="2" size="4" name="Birthday"  placeholder="Day" required></label>
-    <label class="birthyear_label">Year <input class="birthyear" maxlength="4" size="4" name="Birthyear" placeholder="Year" required></label>
+    <label class="day_label">Day<input class="birthday" maxlength="2" size="4" name="Birthday"  placeholder="Day" required></label>
+    <label class="year_label">Year <input class="birthyear" maxlength="4" size="4" name="Birthyear" placeholder="Year" required></label>
   </fieldset>
     
   <fieldset class="radios">
@@ -171,14 +172,14 @@
       <input type="checkbox" name="terms" id="terms"/>
       <label for="terms">I agree to the <a href="">terms of use.</a></label>
   </div><!--the end of the terms div-->
-  </form>
       <input type="submit" value="Sign Up" class="button"/>
+  </form>
   <div id="social_media">
-      <h3>Follow Us On:</h3>
+      <h3>Follow Us:</h3>
   <div id="social_media_icons">
-      <img src="images/facebook.png" width="60" height="60" alt="facebook icon" /><!--social media icons from elegantthemes.com--> 
-      <img src="images/twitter.png" width="60" height="60" alt="twitter icon" /><!--remove width and heights?--> 
-      <img src="images/flickr.png" width="60" height="60" alt="flickr icon" /> 
+      <a href=""><img src="images/facebook.png" width="60" height="60" alt="facebook icon" /></a><!--social media icons from elegantthemes.com--> 
+      <a href=""><img src="images/twitter.png" width="60" height="60" alt="twitter icon" /></a>
+      <a href=""><img src="images/flickr.png" width="60" height="60" alt="flickr icon" /></a> 
   </div><!--end of social media icons div--> 
   </div><!--end of social media div-->
   </section>
