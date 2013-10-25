@@ -143,17 +143,18 @@ h1 {
 ***********************************************************************************/
 /*****************************************Main content settings********************/
 #main_section {
+	width: 100%;
 	background: #FFFACD;
 	padding-bottom: 20px;
 	overflow: hidden; 
 }
-#main_section:before, #main_section:after {
+/*#main_section:before, #main_section:after {
 	content: "";
 	display: table;
 }
 #main_section:after {
 	clear: both;
-}
+}*/
 #main_section img {
 	margin-bottom: 0;
 	padding-bottom: 0;
