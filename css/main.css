@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* CSS Document */
 /*****************************************Color Palette*****************************
 Light cyan (header,footer and aside) #E0FFFF (209, 255, 204)
@@ -55,7 +54,7 @@ table {
 ************************************************************************************/
 /*****************************************Site wide settings************************/
 #wrapper {
-    max-width: 960px; /*working on now!!!was width:960px*/
+    max-width: 960px; /*was width:960px*/
     margin: 0 auto;
 }
 body {
@@ -64,7 +63,7 @@ body {
 	background-image: url(../images/background_texture.jpg); /*url(../images/wood.jpg);*/
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	font: 100%/1.4 Quicksand, sans-serif;
+	font: 1em/1.4 Quicksand, sans-serif;
 	/*font-family: 'Quicksand', sans-serif;
 	font-size: 100%; */ /*default 16px*/
 	/*line-height: 1.4; changed to font shorthand*/
@@ -74,12 +73,12 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
-    padding: 0 10px;
+    padding: 0 2%;
 }
 h2 {
 	font-size: 1.5em; /*24px (24/16)*/
 	font-weight: bold;
-	padding: 20px 10px 20px 10px;
+	padding: 20px 2%;
 }
 h3 {
 	font-size: 1.25em; /*20px (20/16)*/
@@ -92,7 +91,7 @@ p {
     padding: 0 2%; /*15px (15/960)*/
 }
 img {
-	max-width: 100%; /*working on now-and width of wrapper*/
+	max-width: 100%;
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -118,10 +117,10 @@ h1 {
 	width: 97.91666%; /*940px (940/960)*/
 	margin: 0 auto;
 	list-style-type: none;
-	padding:22px 2.34042%; /*was (22px,22px,22px,22px)*/
+	padding:5px 2.34042% 22px 2.34042%; 
 }
 #home ul li a {
-	width: 24.47916%; /*235px (235/960) might need to change to 940*/
+	width: 24.47916%; /*235px (235/960)*/
 	float: left;
 	text-decoration: none;
 	text-align: center;
@@ -144,29 +143,37 @@ h1 {
 ***********************************************************************************/
 /*****************************************Main content settings********************/
 #main_section {
+	width: 100%;
 	background: #FFFACD;
-	clear: right;
 	padding-bottom: 20px;
+	overflow: hidden; 
 }
+/*#main_section:before, #main_section:after {
+	content: "";
+	display: table;
+}
+#main_section:after {
+	clear: both;
+}*/
 #main_section img {
 	margin-bottom: 0;
 	padding-bottom: 0;
+	float:none; 
 }
 aside {
 	width: 20%; 
 	background: #E0FFFF;
 	float: right;
-	padding: 30px 3.5%; 
+	padding: 30px 3.5%;  
 	margin-top: 0;
-	position: relative;
-	top: -416px;
+	margin-right: 2%; 
 }
 aside ul {
-	font-size: 1.0625em; /*17px (17/16) or is it (17/20 because of the h3?)*/
+	font-size: 1.0625em; /*17px (17/16)*/
 	font-style: italic;
 	list-style-type: square;
 	line-height: 1.5;
-	padding-left: 16.2%;
+	padding-left: 16.2%; 
 }
 aside h3 {
 	padding-bottom: 10px;
@@ -174,9 +181,8 @@ aside h3 {
 	text-shadow: 1px 1px 2px #003;
 }
 .column_text {
-	 width: 70%;
-	 float: none; /*just created the top two trying to figure out the responsive issues*/
-	 /*width: 71.875%;*/ /*created along with the aside width, 690px (690/960)*/
+	width: 70%;
+	float: left;
     -moz-column-count: 2; 
     -webkit-column-count: 2; 
     column-count: 2;
@@ -193,33 +199,32 @@ aside h3 {
 /*******************************************Ancient Knowledge section**************/
 #ancientknowledge {
 	width: 100%;
-	background: rgba(255, 250, 205, 0.90);
+	background: rgba(255, 250, 205, 0.80);
+	clear: both; 
+	overflow: hidden;
 }
-#ancientknowledge img {
+#ancientknowledge img { 
+ 	max-width: 100%; 
+	min-width: 28%; 
 	float: right;
-	width: 28%;
-	position: relative;
-	top: 38px;
-	left: 22.9%; 
-	/*just added, I also removed the width and height from the HTML, not sure if this is correct*/
-	/*position: fixed;
-	top: 500px;
-	left: 20%;*/
-	
+	padding-right: 2%; 
+	padding-bottom: 40px;
 }
 #ancient_article {
+	width: 75%; 
 	float: none;
 	padding-bottom: 30px;
 }
 #ancient_article h3 {
 	width: 100%;
-	padding: 5px 1.6%;
+	padding: 5px 3%; 
 }
 #ancient_article p {
 	float: none;
-	padding-right: 0;
+	padding-right: 1%;
 	padding-bottom: 10px;
-	width: 55%;
+	padding-left: 3%;
+	width: 80%; 
 }
 /***************************************************End of Ancient Knowledge*******
 ***********************************************************************************/
@@ -241,10 +246,31 @@ aside h3 {
 **********************************************************************************/
 /*******************************************About Us section**********************/
 #aboutus {
-	background: rgba(255, 250, 205, 0.90);
+	background: rgba(255, 250, 205, 0.80);
 }
 #aboutus p {
 	padding-bottom: 10px;
+}
+table {
+	width: 55%;
+	margin-top: 25px;
+	margin-bottom: 35px;
+	position: relative;
+	left: 22%;
+}
+caption {
+	padding-right: 67%;
+}
+td, th {
+	border: 1.75px solid #333;
+	padding: 5px 1.5%;
+	text-align: left;
+}
+td a {
+	text-decoration: none;
+}
+th {
+	/*background: white;*/
 }
 blockquote {
 	width: 83.333333%; /*800px (800/960)*/
@@ -259,30 +285,125 @@ blockquote {
 /*******************************************Sign up section***********************/
 #signup {
 	background: #FFFACD;
+	overflow: hidden; 
+}
+#signup:before, #signup:after {
+	content: "";
+	display: table;
+}
+#signup:after {
+	clear: both;
+}
+form  {
+	width: 63%; 
+	font-size: 1.1em;
+	margin-top: 5px; 
+	padding-top: 25px;
+	padding-bottom: 30px; 
+	padding-left: 2%;
+	line-height: 1.7; 
+	float:left; 
+}
+#name_first {
+	margin-left: 3.2%;
+}
+#name_last {
+	margin-left: 3.7%;
+}
+#zip_code {
+	margin-left: 5.8%;
+}
+#email_address {
+	margin-left: 11.5%;
+}
+.row {
+	display: inline-block;
+	margin-right: 3%;
+	padding-left: 7.3%;
+	position: relative;
+	top: -28px;
+	left: 12.8%;
+	font-size: 0.9em;
+}
+#birthday {
+	margin-top: 0;
+}
+.year_label {
+	font-size: 0.9em;
+}
+.day_label {
+	font-size: 0.9em;
+}
+.birthday_label {
+	margin-right: 6.6%;
+}
+#newsletter_checkbox {
+	margin-left: 20%; 
+	font-size: 0.85em;
+	position: relative;
+	top: -27px;
+}
+#terms_checkbox {
+	margin-left: 20%;
+	font-size: 0.85em;
+	position: relative;
+	top: -27px;
+}
+#terms_checkbox a {
+	text-decoration: none;
+}
+#social_media {
+	width: 22%; 
+	height: 60px;
+	float: right;
+	margin-top: 30px;
+	padding-right: 2%;
+}
+#social_media h3 {
+	background: #E0FFFF;
+	padding-top: 5px;
+	padding-left: 5%;
+	color: #333;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px #003;
+}
+#social_media_icons {
+	padding-left: 5%;
+	background: #E0FFFF;
 }
 /***************************************************End of Sign up section********
 **********************************************************************************/
 /*******************************************Footer settings***********************/
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
 footer {
 	background: #E0FFFF;
+	width: 100%;
 }
 footer ul {
-	width: 97.91666%; /*940px; (940/960)*/
-	padding: 5px 0.53191%; /*5px left and right (5/940)*/
+	width: 100%;
+	margin-top: 0px;
 }
 footer a {
-	width: 19.14893%; /*180px (180/940)*/
-	float: left;
-	padding-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding-bottom: 0px; /*was 5*/
+	padding-left: 8.5%; 
 	text-decoration: none;
 	text-align: center;
 	color: #FF5600;
 	font-weight: bold;
+	float: left;
 }
 footer p {
 	font-size: 0.75em; /*12px (12/16)*/
 	padding-bottom: 5px;
-	clear: left;
+	clear: both; 
 }
 a:link {
 	color: #FF5600;
@@ -300,19 +421,26 @@ a:active {
 ***********************************************************************************/
 /**********************************************Buttons and Misc.*******************/
 .button {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 1.5em; /*24px (24/16)*/
-	font-weight: bold;
+	font: normal normal normal 1.5em normal Quicksand,sans-serif;
 	background-color: #FF5600;
 	border: none;
 	border-radius: 4px;
 	box-shadow: 2px 2px 2px #333;
-	margin: 30px 0 10px 26px;
+	margin: -25px 18% 0 20.5%;
 	text-shadow: 1px 1px 3px #FFF;
 	width:  150px;
 	height: 40px;
 	background: -moz-linear-gradient(top, #f3c5bd 0%, #ea2803 9%, #ea2803 34%, #ff6600 75%, #e86c57 94%, #c72200 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3c5bd), color-stop(9%,#ea2803), color-stop(34%,#ea2803),     color-stop(75%,#ff6600), color-stop(94%,#e86c57), color-stop(100%,#c72200)); /* Thanks to Colorzilla.com for helping with the gradient*/
+}
+input:hover {
+	color: #FFFACD;
+}
+input:focus {
+	color: #FF5600;
+}
+input:active {
+	color: #333;
 }
 /***************************************************End of buttons and Misc.*********
 ************************************************************************************/
@@ -324,35 +452,32 @@ a:active {
 	}
 	h2 {
 		font-size: 1.4em;
-		padding-left: 3%;
+		padding-left: 2%;
 	}
 	h3 {
 		font-size: 1.1em;
 		padding-left: 2%;
 	}
-	
 	#home {
 		/*background: honeyDew;*/
 		background-image: none;
 	}
 	.column_text p {
-		padding-left: 8%;
-	}
-	aside {
-		position: relative;
-		top: -413px;
+		padding-left: 6%;
 	}
 	#ancientknowledge img {
 		width: 27%;
 	}
 	#ancient_article {
-		min-width: 90%;
-		padding-left: 1.15%;
+		min-width: 80%;
 	}
 	#gallery img {
-		padding-left: 25%;
+		/*padding-left: 25%;*/
 	}
 	#aboutus p, #signup p {
+		padding-left: 2%;
+	}
+	form {
 		padding-left: 3%;
 	}
 }
@@ -367,6 +492,9 @@ a:active {
 	h3 {
 		font-size: 1.1em;
 	}
+	header a, footer a {
+		font-size: .95em;
+	}
 	#home {
 		/*background: mistyRose;*/
 		background-image: none;
@@ -375,21 +503,23 @@ a:active {
 		padding-left: 4%;
 	}
 	#home ul {
-		padding-bottom: 50px;
+		padding-bottom: 43px;
 	}
 	#main_section aside {
 		display: none;
 	}
 	#ancientknowledge h2 {
 		padding-left: 4%;
-	}
-		
+	}	
 	.column_text {
 		width: auto;
 		padding-right: 3%;
 		-webkit-column-count: 1;
 		-moz-column-count: 1;
 		column-count: 1;
+	}
+	#ancient_article {
+		width: auto;
 	}
 	#ancientknowledge img {
 		float:none;
@@ -399,10 +529,8 @@ a:active {
 		left: 8%;
 	}
 	#ancient_article p {
-		width: auto;
-		padding-right: 6%;
+		width: 90%;
 		padding-left: 6%;
-	
 	}
 	#ancient_article h3 {
 		width: 100%;
@@ -412,18 +540,51 @@ a:active {
 		padding-left: 4%;
 	}
 	#gallery img {
-		padding-left: 12%;
+		padding-left: 16%;
 	}
 	#aboutus {
 		padding-right: 2%;
 		padding-left: 2%
 	}
+	table {
+		width: 75%;
+		position: relative;
+		left: 10%;
+	}
 	#signup {
 		padding-right: 2%;
 		padding-left: 2%;
 	}
-		
-	
+	form {
+		width: 95%;
+	}
+	#zip_code {
+		margin-left: 5.5%;
+	}
+	#email_address {
+		margin-left: 10.4%;
+	}
+	.birthday_label {
+		margin-right: 6.1%;
+	}
+	.row {
+		padding-left: 5.2%;
+	}
+	#newsletter_checkbox, #terms_checkbox {
+		margin-left: 17.9%;
+	}
+	.button {
+		margin-left: 18.5%;
+	}
+	#social_media {
+		display: none;
+	}
+	footer a {
+		padding-left: 11%;
+	}
+	#signup_link {
+		display:none;
+	}
 }
 /*SMALL-Mobile Portrait size to Mobile Landscape size (devices and browsers)*/
 @media only screen and (max-width: 479px) {
@@ -444,18 +605,19 @@ a:active {
 		padding-left: 3%;
 	}
 	#home ul {
-		padding-bottom: 50px;
+		padding-bottom: 40px;
 	}
 	#main_section aside {
 		display: none;
 	}
 	#ancientknowledge img {
 		float: none;
-		margin-left: -18%;
+		margin-left: 5%;
+		margin-bottom: -80px;
 		width: 50%;
 	}
 	#ancientknowledge h2{
-		margin-bottom: -40px;
+		margin-bottom: 0px;
 	}
 	.column_text {
 		-webkit-column-count: 1;
@@ -480,15 +642,70 @@ a:active {
 		padding-left: 5%;
 	}
 	#gallery img {
-		padding: 0 14%;
+		padding: 0 22.5%;
 	}
 	#aboutus p {
 		padding-right: 5%;
 		padding-left: 5%;
 	}
+	table {
+		width: 90%;
+		position: relative;
+		left: 5%;
+	}
+	caption {
+		display: none;
+	}
 	#signup p {
 		padding-right: 5%;
 		padding-left: 5%;
+	}
+	form {
+		width: 95%;
+		padding-left: 5%;
+		line-height: 1.9;
+	}
+	.form_field {
+		font-size: 0.95em;
+	}
+	.birthday_label, .birthyear_label {
+		font-size: 0.95em;
+	}
+	.radios legend {
+		font-size: 0.95em;
+	}
+	#name_first {
+		margin-left: 0.2%;
+	}
+	#name_last {
+		margin-left: 0.8%;
+	}
+	#zip_code {
+		margin-left: 3%;
+	}
+	#email_address {
+		margin-left: 9.2%;
+	}
+	.birthday_label {
+		margin-right: 3.8%;
+	}
+	.birthyear_label {
+		margin-left: -5%
+	}
+	.row {
+		padding-left: 6.5%;
+		position: relative;
+		top: -26px;
+		padding-bottom: 4px;
+	}
+	#newsletter_checkbox {
+		margin-left: 19.3%;
+		padding-bottom: 4px;
+		font-size: 0.9em;
+	}
+	#terms_checkbox {
+		margin-left: 19.3%;
+		font-size: 0.9em;
 	}
 	#signup_link {
 		display:none;
@@ -497,8 +714,14 @@ a:active {
 		width: 100%;
 		list-style-type: none;
 	}
-	footer ul li a {
-		margin: 0 2%;
+	footer a {
+		padding-left: 6%;
+	}
+	#social_media {
+		display: none;
+	}
+	.button {
+		margin-left: 21.5%;
 	}
 }
 		

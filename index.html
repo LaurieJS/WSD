@@ -11,7 +11,6 @@
   		
   <body>
   <div id="wrapper">
-
   <header id="home">
     <img src="images/owl_logo.png" width="60" height="60" alt="knowledge.com logo" /> 
     <img src="images/logo_knowledge.png" width="160" height="24" alt="Logo for Knowledge" />
@@ -26,7 +25,7 @@
   </header>
 
   <article id="main_section">
-    <img src="images/snowy_owl.jpg" alt="Snowy owl in flight" /><!--removed width="960px" height="500px" for responsive design-->
+    <img src="images/snowy_owl.jpg" alt="Snowy owl in flight" />
       <h2>Snowy Owls</h2>
   <div class="column_text"> 
     <p>Snowy Owls migrate to Canada, Europe, Asia, and the northern United States throughout the year. They are unlike most 
@@ -37,7 +36,7 @@
     <p>Snowy Owls eat lemmings and other rodents; however, they <em>really</em> enjoy lemmings and can 
       eat 3-5 a day. If times are tough and lemmings are not available a Snowy Owl can eat an animal
       the size of a goose. They are fierce birds of prey, and are even known to scare wolves away from their nests.</p>
-   </div>
+   </div><!--end of column_text div-->
    <aside>
     <h3>Owl Facts</h3>
       <ul>
@@ -52,13 +51,12 @@
   
   <article id="ancientknowledge">
     <h2>Ancient Knowledge</h2>
-    <img src="images/athena_owl.jpg" alt="Athena reaching out to an owl" /><!--removed width="300" height="300"-->
+    <img src="images/athena_owl.jpg" alt="Athena reaching out to an owl" />
   <section id="ancient_article">
     <h3>Owls during the Ancient Greek era</h3>
     <p>Athena, the daughter of Zeus, is known as the 'goddess of the night' and is associated with wisdom. Athena's wisdom was
       given to her from her owl companion who revealed unseen truths. Athena was able to tell the entire truth,
-      and not half-truths because of her trusty owl companion. This made her well-known for being honest and wise, which is why
-      owls are associated with wisdom.</p>
+      and not half-truths because of her trusty owl companion. This made Athena well-known for being honest and wise. This is how owls became associated with wisdom.</p>
     <p>During the Greek era owls were protected and honored. The ancient city of Athens had a coin featuring Athena
       on one side, and her owl companion on the other side. The owl on the coin was supposed to keep a watchful eye over trade and commerce.</p>
   </section>
@@ -67,12 +65,12 @@
   <section id="gallery">
     <h2>Gallery</h2>
     <ul>
-      <li><img src="images/cute_owl.jpg" alt="Baby owl" /></li><!--removed width="250" height="250"-->
-      <li><img src="images/owl_snow.jpg" alt="Owl in the snow" /></li><!--width="250" height="250"-->
-      <li><img src="images/owl_peeking.jpg" alt="An owl peeking around a tree" /></li><!--width="250" height="250"-->
-      <li><img src="images/spooky_owl.jpg" alt="Owl in a tree" /></li><!--width="250" height="250"-->
-      <li><img src="images/eastern_screech_owl.jpg" alt="Eastern Screech Owl" /></li><!--width="250" height="250"-->
-      <li><img src="images/owl_in_tree.jpg" alt="Owl in a tree" /></li><!--width="250" height="250"-->
+      <li><img src="images/cute_owl.jpg" alt="Baby owl" /></li>
+      <li><img src="images/owl_snow.jpg" alt="Owl in the snow" /></li>
+      <li><img src="images/owl_peeking.jpg" alt="An owl peeking around a tree" /></li>
+      <li><img src="images/spooky_owl.jpg" alt="Owl in a tree" /></li>
+      <li><img src="images/eastern_screech_owl.jpg" alt="Eastern Screech Owl" /></li>
+      <li><img src="images/owl_in_tree.jpg" alt="Owl in a tree" /></li>
     </ul>
   </section>
 
@@ -80,7 +78,26 @@
     <h2>About Us</h2>
     <p>The folks at Knowledge.com <strong>really</strong> love owls. This site is dedicated to all of those owl
       lovers out there who would like to spend some time learning about these magnificent, mysterious, and wise creatures.</p>
-    <p>If you have any questions or comments about the site feel free to email us at info&commat;knowledge.com.</p>
+    <p>If you have any questions, comments, or would like to submit content feel free to contact us:</p>
+  <table> <!--summary="Contact Information" the HTML validator said that the summary attribute is obsolete-->
+    <caption>Contact Information</caption>
+    <tr>
+      <th>Questions or Comments:</th>
+      <td><a href="">info&#64;knowledge.com</a></td>
+    </tr>
+    <tr>
+      <th>User Submissions:</th>
+      <td><a href="">submissions&#64;knowledge.com</a></td>
+    </tr>
+    <tr>
+      <th>Unsubscribe:</th>
+      <td><a href="">unsubscribe&#64;knowledge.com</a></td>
+    </tr>
+    <tr>
+      <th >Snail Mail:</th>
+      <td>123 Main Street, Anytown, US 11111</td>
+    </tr>
+ </table>
     <p>Thanks for visiting!</p>
     <blockquote>
       <p>"Of all of the horrid, hideous notes of woe, Sadder than owl-songs or the midnight blast, Is that portentous phrase, 'I told you so.'"</p>
@@ -91,10 +108,76 @@
   <section id="signup">
     <h2>Sign Up</h2>
     <p>Sign up to receive emails about our newest owl knowledge. Don't worry, we only send emails once a week.</p>
-    <input type="submit" value="Sign Up" class="button"/>
+  <form method="get" action="mailto:subscribe@knowledge.com">
+  <div class="form_field">
+    <label for="name_first">First Name</label>
+    <input type="text" name="name_first" id="name_first"/>
+  </div><!--end of the name first div-->
+  <div class="form_field">
+    <label for="name_last">Last Name</label>
+    <input type="text" name="name_last" id="name_last"/>
+  </div><!--end of the name last div-->
+  <div class="form_field">
+    <label for="zip_code">Zip Code</label>
+    <input type="text" name="zip_code" id="zip_code"/>
+  </div><!--end of the zipcode div-->
+  <div class="form_field">
+    <label for="email_address">Email</label>
+    <input type="text" name="email_address" id="email_address"/>
+  </div><!--end of the email address div-->
+  <fieldset id="birthday">
+    <label class="birthday_label">Birthday</label>
+    <label class="month"></label>
+    <select id="select-style" name="Birthmonth">
+    <option value="">Month</option>
+    <option  value="01">January</option>
+	<option value="02">February</option>
+	<option value="03">March</option>
+    <option value="04">April</option>
+    <option value="05">May</option>
+    <option value="06">June</option>
+    <option value="07">July</option>
+    <option value="08">August</option>
+    <option value="09">September</option>
+    <option value="10">October</option>
+    <option value="11">November</option>
+    <option value="12">December</option>
+    </select>   
+    <label class="day_label">Day<input class="birthday" maxlength="2" size="4" name="Birthday"  placeholder="Day" required></label>
+    <label class="year_label">Year <input class="birthyear" maxlength="4" size="4" name="Birthyear" placeholder="Year" required></label>
+  </fieldset>
+  <fieldset class="radios">
+      <legend>Gender</legend>
+  <div class="row">
+      <input type="radio" id="gender_male" name="gender" value="male"/>
+      <label for="gender_male">Male</label>
+  </div><!--end of male row div-->
+  <div class="row">
+      <input type="radio" id="gender_female" name="gender" value="female"/>
+      <label for="gender_female">Female</label>
+  </div><!--end of the female div-->
+  </fieldset>
+  <div id="newsletter_checkbox">
+      <input type="checkbox" name="newsletter" id="newsletter"/>
+      <label for="newsletter">I would like to subscribe to the Knowledge.com newsletter.</label>
+  </div><!--the end of the newsletter div-->
+  <div id="terms_checkbox">
+      <input type="checkbox" name="terms" id="terms"/>
+      <label for="terms">I agree to the <a href="">terms of use.</a></label>
+  </div><!--the end of the terms div-->
+      <input type="submit" value="Sign Up" class="button"/>
+  </form>
+  <div id="social_media">
+      <h3>Follow Us:</h3>
+  <div id="social_media_icons">
+      <a href=""><img src="images/facebook.png" width="60" height="60" alt="facebook icon" /></a><!--social media icons from elegantthemes.com--> 
+      <a href=""><img src="images/twitter.png" width="60" height="60" alt="twitter icon" /></a>
+      <a href=""><img src="images/flickr.png" width="60" height="60" alt="flickr icon" /></a> 
+  </div><!--end of social media icons div--> 
+  </div><!--end of social media div-->
   </section>
 
-  <footer>
+  <footer class="clearfix">
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#ancientknowledge">Ancient Knowledge</a></li>
