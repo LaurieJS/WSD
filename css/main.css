@@ -517,7 +517,7 @@ input:active {
 		padding-left: 4%;
 	}	
 	.column_text {
-		width: auto;
+		width: 94%; /*was auto, doesn't look right on Firefox*/
 		padding-right: 3%;
 		-webkit-column-count: 1;
 		-moz-column-count: 1;
@@ -554,6 +554,9 @@ input:active {
 	caption {
 		/*width: 50%;*/
 		padding-left: 7%;
+	}
+	td {
+		padding-right: 3%;
 	}
 	table {
 		width: 75%;
@@ -663,6 +666,9 @@ input:active {
 		width: 90%;
 		position: relative;
 		left: 5%;
+	}
+	td {
+		padding-right: 3%;
 	}
 	caption {
 		/*display: none;*/
