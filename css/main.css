@@ -393,12 +393,13 @@ footer a {
 	margin-top: 10px;
 	margin-bottom: 15px;
 	padding-bottom: 0px; /*was 5*/
-	padding-left: 8.5%; 
+	/*padding-left: 8.5%;*/ 
 	text-decoration: none;
 	text-align: center;
 	color: #FF5600;
 	font-weight: bold;
 	float: left;
+	margin-left: 8.5%;
 }
 footer p {
 	font-size: 0.75em; /*12px (12/16)*/
@@ -580,10 +581,12 @@ input:active {
 		display: none;
 	}
 	footer a {
-		padding-left: 7%;
+		/*padding-left: 7%;*/ /*fixed the footer,it was bothering me that it didn't look right*/
+		margin-left: 4%;
+		width: 15%;
 	}
 	#signup_link {
-		display:none;
+		/*display:none;*/
 	}
 }
 /*SMALL-Mobile Portrait size to Mobile Landscape size (devices and browsers)*/
@@ -715,7 +718,8 @@ input:active {
 		list-style-type: none;
 	}
 	footer a {
-		padding-left: 6%;
+		margin-left: 4.5%;
+		width: 20%;
 	}
 	#social_media {
 		display: none;
