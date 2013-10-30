@@ -259,7 +259,8 @@ table {
 	left: 22%;
 }
 caption {
-	padding-right: 67%;
+	width: 50%; /*added the width*/
+	margin-left: -9%;  /*padding-right: 67%;*/
 }
 td, th {
 	border: 1.75px solid #333;
@@ -393,12 +394,13 @@ footer a {
 	margin-top: 10px;
 	margin-bottom: 15px;
 	padding-bottom: 0px; /*was 5*/
-	padding-left: 8.5%; 
+	/*padding-left: 8.5%;*/ 
 	text-decoration: none;
 	text-align: center;
 	color: #FF5600;
 	font-weight: bold;
 	float: left;
+	margin-left: 8.5%;
 }
 footer p {
 	font-size: 0.75em; /*12px (12/16)*/
@@ -477,6 +479,9 @@ input:active {
 	#aboutus p, #signup p {
 		padding-left: 2%;
 	}
+	caption {
+		padding-left: 1%;
+	}
 	form {
 		padding-left: 3%;
 	}
@@ -512,7 +517,7 @@ input:active {
 		padding-left: 4%;
 	}	
 	.column_text {
-		width: auto;
+		width: 94%; /*was auto, doesn't look right on Firefox*/
 		padding-right: 3%;
 		-webkit-column-count: 1;
 		-moz-column-count: 1;
@@ -545,6 +550,13 @@ input:active {
 	#aboutus {
 		padding-right: 2%;
 		padding-left: 2%
+	}
+	caption {
+		/*width: 50%;*/
+		padding-left: 7%;
+	}
+	td {
+		padding-right: 3%;
 	}
 	table {
 		width: 75%;
@@ -580,10 +592,12 @@ input:active {
 		display: none;
 	}
 	footer a {
-		padding-left: 11%;
+		/*padding-left: 7%;*/ /*fixed the footer,it was bothering me that it didn't look right*/
+		margin-left: 4%;
+		width: 15%;
 	}
 	#signup_link {
-		display:none;
+		/*display:none;*/
 	}
 }
 /*SMALL-Mobile Portrait size to Mobile Landscape size (devices and browsers)*/
@@ -653,8 +667,12 @@ input:active {
 		position: relative;
 		left: 5%;
 	}
+	td {
+		padding-right: 3%;
+	}
 	caption {
-		display: none;
+		/*display: none;*/
+		margin-left: -2%;
 	}
 	#signup p {
 		padding-right: 5%;
@@ -715,7 +733,8 @@ input:active {
 		list-style-type: none;
 	}
 	footer a {
-		padding-left: 6%;
+		margin-left: 4.5%;
+		width: 20%;
 	}
 	#social_media {
 		display: none;
